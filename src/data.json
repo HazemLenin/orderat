@@ -1,0 +1,108 @@
+{
+	"restaurants": [
+		{
+			"id": 1,
+			"name": "KFC",
+			"rate": 3,
+			"category": "Food"
+		},
+		{
+			"id": 2,
+			"name": "Burger King",
+			"rate": 1,
+			"category": "Desert"
+		},
+		{
+			"id": 3,
+			"name": "Mcdonald's",
+			"rate": 5,
+			"category": "Food"
+		},
+		{
+			"id": 4,
+			"name": "Cook Door",
+			"rate": 2,
+			"category": "Desert"
+		},
+		{
+			"id": 5,
+			"name": "Koshari Elzaeem",
+			"rate": 5,
+			"category": "Food"
+		}
+	],
+	"products": [
+		{
+			"id": 1,
+			"name": "Dinner box",
+			"restaurantId": 1,
+			"price": 200
+		},
+		{
+			"id": 2,
+			"name": "Fried Chicken",
+			"restaurantId": 1,
+			"price": 200
+		},
+		{
+			"id": 3,
+			"name": "Small Burger",
+			"restaurantId": 2,
+			"price": 200
+		},
+		{
+			"id": 4,
+			"name": "Large Burder",
+			"restaurantId": 2,
+			"price": 200
+		},
+		{
+			"id": 5,
+			"name": "Happy Meal",
+			"restaurantId": 3,
+			"price": 200
+		},
+		{
+			"id": 6,
+			"name": "Chicken Macdo",
+			"restaurantId": 3,
+			"price": 200
+		},
+		{
+			"id": 7,
+			"name": "Big Mac",
+			"restaurantId": 3,
+			"price": 200
+		},
+		{
+			"id": 8,
+			"name": "Chicken Sandwich",
+			"restaurantId": 4,
+			"price": 200
+		},
+		{
+			"id": 9,
+			"name": "Large Mashroom Beef Sandwich",
+			"restaurantId": 5,
+			"price": 200
+		},
+		{
+			"id": 10,
+			"name": "High Top",
+			"restaurantId": 6,
+			"price": 200
+		},
+		{
+			"id": 11,
+			"name": "High Top With Livre",
+			"restaurantId": 6,
+			"price": 200
+		},
+		{
+			"id": 12,
+			"name": "High Top With Sausage",
+			"restaurantId": 6,
+			"price": 200
+		}
+	]
+}
