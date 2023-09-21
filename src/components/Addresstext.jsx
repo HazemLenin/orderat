@@ -18,17 +18,11 @@ function Addresstext(){
     
     
     return(
-        <>
-        <h2> Address Form</h2>
-        {/* <input type="text" placeholder="Building Name" /><br/>
-        <input type="text" placeholder="Apt. No."/>
-        <input type="text" placeholder="Floor "/> <br/>
-        <input type="text" placeholder="Street Name"/> <br/>
-        <input type="text" placeholder="Additional directions(optional)"/> <br/>
-        <input type="tel" placeholder="Phone number "/> <br/> <br/> */}
-        <input type="text" placeholder="Address" onChange={handleChange} ref={addressRef}/>
-        <button type="submit">Save Address</button>
-        </>
+        <div className="ml-5 ">
+        <h2 className="italic">Detailed Address :</h2>
+        <input type="text" placeholder="Type your Address" onChange={handleChange} ref={addressRef} className="border-2"/> <br/><br/>
+        <button type="submit" className="border-4 rounded border-red-700 ml-10 bg-red-700 text-white">Save Address</button>
+        </div>
    
    
    
