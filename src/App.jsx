@@ -5,7 +5,11 @@ import Restaurant from "./pages/Restaurant";
 function App() {
   return (
     <>
-      <Restaurant />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Restaurant />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
