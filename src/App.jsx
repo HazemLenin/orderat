@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createContext, useContext, useState } from "react";
@@ -62,7 +63,7 @@ function App() {
 
 	return (
 		<DndProvider backend={HTML5Backend}>
-			<CartContext.Provider value={[cart, add, remove, decreaseAmount]}>
+			<CartContext.Provider value={[cart, add, remove, decreaseAmount, setCart]}>
 				<BrowserRouter>
 					<Navbar />
 					<div className="pt-14">
