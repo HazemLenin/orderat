@@ -5,6 +5,7 @@ import { createContext, useState } from "react";
 import Menu from "./pages/Menu";
 import AddressContext from "./contexts/AddressContext";
 import Restaurant from "./pages/Restaurant";
+import Navbar from "./components/navbar";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 	return (
 		<AddressContext.Provider value={[address, setAddress]}>
 			<BrowserRouter>
+    <Navbar/>
 				<Routes>
             <Route path="/" element={<Restaurant />} />
 					<Route path="/restaurants/:id" element={<Menu />} />
