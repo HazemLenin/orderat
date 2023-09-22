@@ -1,7 +1,7 @@
 import { useCallback, useContext, useMemo, useRef, useState } from "react";
 import { Marker, Popup } from "react-leaflet";
 import "./map.css";
-import { AddressContext } from "../App";
+import AddressContext from "../contexts/AddressContext";
 
 function DraggableMarker() {
 	const [address, setAddress] = useContext(AddressContext);
