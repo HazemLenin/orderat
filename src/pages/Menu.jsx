@@ -44,14 +44,9 @@ function Menu() {
 								<br />
 								<p className="text-black"> {product.price}</p>
 							</h2>
-							<Tooltip content="Add To Cart">
-								<button
-									data-tooltip-target="tooltip-default"
-									className="block mr-3 rounded-full h-10 w-10 text-red-700 hover:bg-red-700 hover:text-white transition-all"
-								>
-									<FontAwesomeIcon icon={faPlus} />
-								</button>
-							</Tooltip>
+							<button className="block mr-3 rounded-full h-10 w-10 text-red-700 hover:bg-red-700 hover:text-white transition-all">
+								<FontAwesomeIcon icon={faPlus} />
+							</button>
 						</div>
 					))}
 				</div>
