@@ -2,6 +2,7 @@ import './index.css'
 import { BrowserRouter, Routes , Route } from 'react-router-dom';
 import Map from './Pages/Map';
 import { createContext, useState } from 'react';
+import Menu from "./pages/Menu";
 
 export const AddressContext=createContext([
   {
@@ -26,6 +27,7 @@ const [address , setAddress] = useState({
 <BrowserRouter>
 <Routes>
   <Route path="/address" element={<Map/>} />
+    <Route path="/restaurants/:id" element={<Menu/>}/>
 </Routes>
 </BrowserRouter>
 

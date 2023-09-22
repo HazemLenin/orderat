@@ -1,0 +1,33 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: beige;
+}
+
+form {
+  background-color: white;
+  padding: 0px 60px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.button1 {
+  width: 50%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(133, 133, 9);
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  font-weight: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 66px;
+}
