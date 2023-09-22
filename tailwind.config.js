@@ -5,7 +5,6 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   fontFamily: {
-   
     'display': ['"Kaushan_Script"'],
     'body': ['"Open Sans"'],
   },
@@ -13,4 +12,4 @@ export default {
     extend: {},
   },
   plugins: [],
-}
+};

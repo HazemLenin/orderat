@@ -1,0 +1,329 @@
+{
+	"dummyRestaurants": [
+		{
+			"id": 1,
+			"name": "KFC",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 2,
+			"name": "McDonald's",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 3,
+			"name": "BAZOKA",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 4,
+			"name": "Koshry Elzaeem",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 5,
+			"name": "PAPA JOHNS",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 6,
+			"name": "Pizza hut",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 7,
+			"name": "Holmes",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 8,
+			"name": "Hadra Mout",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 9,
+			"name": "Crepy",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 10,
+			"name": "Reghef Shawerma",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 11,
+			"name": "DUNKIN",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 12,
+			"name": "Krispy kreme",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 13,
+			"name": "Nutopia",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 14,
+			"name": "Puffy Pops",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 15,
+			"name": "Cinnabon",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 16,
+			"name": "B.labn",
+			"rate": 3,
+			"category": "desert",
+			"image": "/blbn.png"
+		},
+		{
+			"id": 17,
+			"name": "Fluckiger",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 18,
+			"name": "Genoise",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 19,
+			"name": "Trianon",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 20,
+			"name": "Classique Patisserie",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 21,
+			"name": "Starbucks",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 22,
+			"name": "SooTea",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 23,
+			"name": "On The Run",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 24,
+			"name": "Pick'n Go",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 25,
+			"name": "Hassan",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 26,
+			"name": "Mecca Juice",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 27,
+			"name": "Cilantro",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 28,
+			"name": "Costa Coffee",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 29,
+			"name": "Cups & Candy",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 30,
+			"name": "Bruno's",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		}
+	],
+	"restaurants": [
+		{
+			"id": 1,
+			"name": "KFC",
+			"rate": 3,
+			"category": "Food",
+			"products": [
+				{
+					"id": 1,
+					"name": "Might Zinger Box",
+					"price": 200
+				},
+				{
+					"id": 2,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 3,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 4,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 5,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 6,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 7,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 8,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 9,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 10,
+					"name": "Suprreme love",
+					"price": 209
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Mcdonald's",
+			"rate": 1,
+			"category": "Food",
+			"products": [
+				{
+					"id": 1,
+					"name": "Share Box",
+					"price": 260
+				},
+				{
+					"id": 2,
+					"name": "Happy Meal",
+					"price": 77
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "Bazoka",
+			"rate": 5,
+			"category": "Food",
+			"products": [
+				{
+					"id": 1,
+					"name": "Bazoka Sniper Meal",
+					"price": 145
+				},
+				{
+					"id": 2,
+					"name": "Bazoka Family Meal",
+					"price": 310
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "KOSHRY ElZAEEM",
+			"rate": 2,
+			"category": "Food",
+			"products": [
+				{
+					"id": 1,
+					"name": "Koshary Wahsh El Zaiem",
+					"price": 45
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "Koshari Elzaeem",
+			"rate": 5,
+			"category": "Food"
+		}
+	]
+}
