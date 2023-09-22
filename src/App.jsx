@@ -4,6 +4,8 @@ import Map from "./Pages/Map";
 import { createContext, useState } from "react";
 import Menu from "./pages/Menu";
 import AddressContext from "./contexts/AddressContext";
+import Restaurant from "./pages/Restaurant";
+
 
 function App() {
 	const [address, setAddress] = useState({
@@ -16,8 +18,9 @@ function App() {
 		<AddressContext.Provider value={[address, setAddress]}>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/address" element={<Map />} />
+            <Route path="/" element={<Restaurant />} />
 					<Route path="/restaurants/:id" element={<Menu />} />
+					<Route path="/address" element={<Map />} />
 				</Routes>
 			</BrowserRouter>
 		</AddressContext.Provider>
