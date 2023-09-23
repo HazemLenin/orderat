@@ -1,108 +1,898 @@
 {
-	"restaurants": [
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "KFC",
+      "rate": 3,
+      "category": "Food",
+      "products": [
+        {
+          "id": 1,
+          "name": "Might Zinger Box",
+          "price": 200
+        },
+        {
+          "id": 2,
+          "name": "Suprreme love",
+          "price": 209
+        },
+        {
+          "id": 3,
+          "name": "Twister Combo",
+          "price": 90
+        },
+        {
+          "id": 4,
+          "name": "Fries",
+          "price": 35
+        },
+        {
+          "id": 5,
+          "name": "Kantook Combo",
+          "price": 70
+        },
+        {
+          "id": 6,
+          "name": "My Bucket",
+          "price": 92
+        },
+        {
+          "id": 7,
+          "name": "Twister Chilla Box ",
+          "price": 455
+        },
+        {
+          "id": 8,
+          "name": "Red Hot Twister",
+          "price": 75
+        },
+        {
+          "id": 9,
+          "name": "Monster Box",
+          "price": 246
+        },
+        {
+          "id": 10,
+          "name": "Monster Sandwich-Spicy",
+          "price": 160
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mcdonald's",
+      "rate": 1,
+      "category": "Food",
+      "products": [
+        {
+          "id": 1,
+          "name": "Share Box",
+          "price": 260
+        },
+        {
+          "id": 2,
+          "name": "Happy Meal",
+          "price": 77
+        },
+        {
+          "id": 3,
+          "name": "Chicken Mac Sandwich",
+          "price": 112
+        },
+        {
+          "id": 4,
+          "name": "Mix 2 Regular Meal",
+          "price": 100
+        },
+        {
+          "id": 5,
+          "name": "Potato Wedges",
+          "price": 50
+        },
+        {
+          "id": 6,
+          "name": "Spicy McNuggets 9 Pieces",
+          "price": 96
+        },
+        {
+          "id": 7,
+          "name": "Big Mac Sandwich",
+          "price": 87
+        },
+        {
+          "id": 8,
+          "name": "Double Big Tasty Sandwich",
+          "price": 193
+        },
+        {
+          "id": 9,
+          "name": "Chicken Fillet Large Meal",
+          "price": 169
+        },
+        {
+          "id": 10,
+          "name": "McFizz Strawberry",
+          "price": 54
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bazoka",
+      "rate": 5,
+      "category": "Food",
+      "products": [
+        {
+          "id": 1,
+          "name": "Bazoka Sniper Meal",
+          "price": 145
+        },
+        {
+          "id": 2,
+          "name": "Bazoka Family Meal",
+          "price": 310
+        },
+        {
+          "id": 3,
+          "name": "Melok EL Sa3ada 1",
+          "price": 180
+        },
+        {
+          "id": 4,
+          "name": "Boom Box Single",
+          "price": 109
+        },
+        {
+          "id": 5,
+          "name": "Share Combo Box",
+          "price": 189
+        },
+        {
+          "id": 6,
+          "name": "Lamet EL Sohab",
+          "price": 420
+        },
+        {
+          "id": 7,
+          "name": "Zinger Supreme Combo",
+          "price": 99
+        },
+        {
+          "id": 8,
+          "name": "Duetto2",
+          "price": 240
+        },
+        {
+          "id": 9,
+          "name": "Bazoka Sniper Meal",
+          "price": 145
+        },
+        {
+          "id": 10,
+          "name": "Bazoka Super Crispy Strips Meal",
+          "price": 145
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "KOSHRY ElZAEEM",
+      "rate": 2,
+      "category": "Food",
+      "products": [
+        {
+          "id": 1,
+          "name": "Koshary Wahsh El Zaiem",
+          "price": 45
+        },
+        {
+          "id": 2,
+          "name": "Koshary Amr&Emad Offer",
+          "price": 40
+        },
+        {
+          "id": 3,
+          "name": "Super Koshary",
+          "price": 20
+        },
+        {
+          "id": 4,
+          "name": "Moahmed Salah Koshary",
+          "price": 45
+        },
+        {
+          "id": 5,
+          "name": "Elzaiem Saroukh Koshary",
+          "price": 35
+        },
+        {
+          "id": 6,
+          "name": "Minced Meat Pasta Casserole",
+          "price": 55
+        },
+        {
+          "id": 7,
+          "name": "Chicken Pasta Casserole",
+          "price": 70
+        },
+        {
+          "id": 8,
+          "name": "Liver Order",
+          "price": 45
+        },
+        {
+          "id": 9,
+          "name": "Oriantel Sausage Order",
+          "price": 45
+        },
+        {
+          "id": 10,
+          "name": "French Fries Packet",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Papa Johns",
+      "rate": 4,
+      "category": "Food",
+      "products": [
+        { "id": 1, "name": "Chicken Ranch Pizza", "price": 210 },
+        {
+          "id": 2,
+          "name": "Chicken Supper Papas Pizza",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "name": "Pepperoni Pizza",
+          "price": 200
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Pizza Hut",
+      "rate": 3,
+      "category": "Food",
+      "products": [
+        { "id": 1, "name": "Double Deal", "price": 277 },
+        {
+          "id": 2,
+          "name": "My Melts Box",
+          "price": 165
+        },
+        {
+          "id": 3,
+          "name": "Party Meal",
+          "price": 495
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Holmes",
+      "rate": 5,
+      "category": "Food",
+      "products": [
+        { "id": 1, "name": "Yummy Burger", "price": 155 },
+        {
+          "id": 2,
+          "name": "Cheese Burger",
+          "price": 100
+        },
+        {
+          "id": 3,
+          "name": "The Grand Pa Chicken Sandwich",
+          "price": 120
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Hadra Mout",
+      "rate": 3.5,
+      "category": "Food",
+      "products": [
+        {
+          "id": 1,
+          "name": "Half Grilled Chicken With Rice Meal",
+          "price": 150
+        },
+        {
+          "id": 2,
+          "name": "Altabtaba Tray",
+          "price": 610
+        },
+        {
+          "id": 3,
+          "name": "Mix Grilled Meal Half Grilled Chicken With 1/8 Kilo Of Kofta",
+          "price": 190
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Crepy",
+      "rate": 2.5,
+      "category": "Food",
+      "products": [
+        {
+          "id": 1,
+          "name": "Super Crunchy Chicken Crepy",
+          "price": 75
+        },
+        {
+          "id": 2,
+          "name": "Chedder Cheese Crepy",
+          "price": 74
+        },
+        {
+          "id": 3,
+          "name": "Viagra Crepy",
+          "price": 115
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Reghef Shawerma",
+      "rate": 5,
+      "category": "Food",
+      "products": [
+        {
+          "id": 1,
+          "name": "Beef Shawerma Sandwich",
+          "price": 75
+        },
+        {
+          "id": 2,
+          "name": "Mix Shawerma Fatteh",
+          "price": 80
+        },
+        {
+          "id": 3,
+          "name": "Maria Shawerma Chicken",
+          "price": 85
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Dunkin",
+      "rate": 3,
+      "category": "desert",
+      "products": [
+        {
+          "id": 1,
+          "name": "Mix Donuts Box Of 3 Pieces",
+          "price": 65
+        },
+        {
+          "id": 2,
+          "name": "Eclair",
+          "price": 25
+        },
+        {
+          "id": 3,
+          "name": "Coffe Ring",
+          "price": 25
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Krispy Kreme",
+      "rate": 4,
+      "category": "desert",
+      "products": [
+        {
+          "id": 1,
+          "name": "Lotus Biscoff Doughnut",
+          "price": 45
+        },
+        {
+          "id": 2,
+          "name": "Powderd Strawberry",
+          "price": 39
+        },
+        {
+          "id": 3,
+          "name": "Original Glazed",
+          "price": 33
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Puffy Pops",
+      "rate": 4.7,
+      "category": "desert",
+      "products": [
+        {
+          "id": 1,
+          "name": "Half & Half Puffy Pops",
+          "price": 80
+        },
+        {
+          "id": 2,
+          "name": "Lotus Cookies",
+          "price": 75
+        },
+        {
+          "id": 3,
+          "name": "Family Size 36 Pieces",
+          "price": 315
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Cinnabon",
+      "rate": 4,
+      "category": "desert",
+      "products": [
+        {
+          "id": 1,
+          "name": "Caramel Pecanbon Roll",
+          "price":114 
+        },
+        {
+          "id": 2,
+          "name": "Cinnabon Bites",
+          "price": 55
+        },
+        {
+          "id": 3,
+          "name": "Classic Chocobon Roll",
+          "price": 90
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Starbucks",
+      "rate": 4,
+      "category": "drinks",
+      "products": [
+        {
+          "id": 1,
+          "name": "Cafe Latte",
+          "price":85
+        },
+        {
+          "id": 2,
+          "name": "Blonde Latte",
+          "price": 85
+        },
+        {
+          "id": 3,
+          "name": "Ice Amricano",
+          "price": 75
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "SooTea",
+      "rate": 4,
+      "category": "drinks",
+      "products": [
+        {
+          "id": 1,
+          "name": "Vanila",
+          "price":55
+        },
+        {
+          "id": 2,
+          "name": "Mango",
+          "price": 60
+        },
+        {
+          "id": 3,
+          "name": "Fayrouz",
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "On The Run",
+      "rate": 4,
+      "category": "drinks",
+      "products": [
+        {
+          "id": 1,
+          "name": "Green tea",
+          "price":45
+        },
+        {
+          "id": 2,
+          "name": "Iced Coffee",
+          "price": 85
+        },
+        {
+          "id": 3,
+          "name": "Ice Cream",
+          "price": 90
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Pickn Go",
+      "rate": 4,
+      "category": "drinks",
+      "products": [
+        {
+          "id": 1,
+          "name": "Tea",
+          "price":24 
+        },
+        {
+          "id": 2,
+          "name": "Lemon Juice",
+          "price": 75
+        },
+        {
+          "id": 3,
+          "name": "Ice Tea",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Hassan",
+      "rate": 4,
+      "category": "drinks",
+      "products": [
+        {
+          "id": 1,
+          "name": "Strawberry",
+          "price":35
+        },
+        {
+          "id": 2,
+          "name": "Lotus Milk Shake",
+          "price": 55
+        },
+        {
+          "id": 3,
+          "name": "Kasab",
+          "price": 10
+        }
+      ]
+    }
+  ]
+}
+{
+	"dummyRestaurants": [
 		{
 			"id": 1,
 			"name": "KFC",
 			"rate": 3,
-			"category": "Food"
+			"category": "Food",
+			"image": "/MC.png"
 		},
 		{
 			"id": 2,
-			"name": "Burger King",
-			"rate": 1,
-			"category": "Desert"
+			"name": "McDonald's",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
 		},
 		{
 			"id": 3,
-			"name": "Mcdonald's",
-			"rate": 5,
-			"category": "Food"
+			"name": "BAZOKA",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
 		},
 		{
 			"id": 4,
-			"name": "Cook Door",
+			"name": "Koshry Elzaeem",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 5,
+			"name": "PAPA JOHNS",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 6,
+			"name": "Pizza hut",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 7,
+			"name": "Holmes",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 8,
+			"name": "Hadra Mout",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 9,
+			"name": "Crepy",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 10,
+			"name": "Reghef Shawerma",
+			"rate": 3,
+			"category": "Food",
+			"image": "/MC.png"
+		},
+		{
+			"id": 11,
+			"name": "DUNKIN",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 12,
+			"name": "Krispy kreme",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 13,
+			"name": "Nutopia",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 14,
+			"name": "Puffy Pops",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 15,
+			"name": "Cinnabon",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 16,
+			"name": "B.labn",
+			"rate": 3,
+			"category": "desert",
+			"image": "/blbn.png"
+		},
+		{
+			"id": 17,
+			"name": "Fluckiger",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 18,
+			"name": "Genoise",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 19,
+			"name": "Trianon",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 20,
+			"name": "Classique Patisserie",
+			"rate": 3,
+			"category": "desert",
+			"image": "/MC.png"
+		},
+		{
+			"id": 21,
+			"name": "Starbucks",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 22,
+			"name": "SooTea",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 23,
+			"name": "On The Run",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 24,
+			"name": "Pick'n Go",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 25,
+			"name": "Hassan",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 26,
+			"name": "Mecca Juice",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 27,
+			"name": "Cilantro",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 28,
+			"name": "Costa Coffee",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 29,
+			"name": "Cups & Candy",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		},
+		{
+			"id": 30,
+			"name": "Bruno's",
+			"rate": 3,
+			"category": "drinks",
+			"image": "/MC.png"
+		}
+	],
+	"dummyRestaurants2": [
+		{
+			"id": 1,
+			"name": "KFC",
+			"rate": 3,
+			"category": "Food",
+			"products": [
+				{
+					"id": 1,
+					"name": "Might Zinger Box",
+					"price": 200
+				},
+				{
+					"id": 2,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 3,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 4,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 5,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 6,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 7,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 8,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 9,
+					"name": "Suprreme love",
+					"price": 209
+				},
+				{
+					"id": 10,
+					"name": "Suprreme love",
+					"price": 209
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Mcdonald's",
+			"rate": 1,
+			"category": "Food",
+			"products": [
+				{
+					"id": 1,
+					"name": "Share Box",
+					"price": 260
+				},
+				{
+					"id": 2,
+					"name": "Happy Meal",
+					"price": 77
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "Bazoka",
+			"rate": 5,
+			"category": "Food",
+			"products": [
+				{
+					"id": 1,
+					"name": "Bazoka Sniper Meal",
+					"price": 145
+				},
+				{
+					"id": 2,
+					"name": "Bazoka Family Meal",
+					"price": 310
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "KOSHRY ElZAEEM",
 			"rate": 2,
-			"category": "Desert"
+			"category": "Food",
+			"products": [
+				{
+					"id": 1,
+					"name": "Koshary Wahsh El Zaiem",
+					"price": 45
+				}
+			]
 		},
 		{
 			"id": 5,
 			"name": "Koshari Elzaeem",
 			"rate": 5,
 			"category": "Food"
-		}
-	],
-	"products": [
-		{
-			"id": 1,
-			"name": "Dinner box",
-			"restaurantId": 1,
-			"price": 200
-		},
-		{
-			"id": 2,
-			"name": "Fried Chicken",
-			"restaurantId": 1,
-			"price": 200
-		},
-		{
-			"id": 3,
-			"name": "Small Burger",
-			"restaurantId": 2,
-			"price": 200
-		},
-		{
-			"id": 4,
-			"name": "Large Burder",
-			"restaurantId": 2,
-			"price": 200
-		},
-		{
-			"id": 5,
-			"name": "Happy Meal",
-			"restaurantId": 3,
-			"price": 200
-		},
-		{
-			"id": 6,
-			"name": "Chicken Macdo",
-			"restaurantId": 3,
-			"price": 200
-		},
-		{
-			"id": 7,
-			"name": "Big Mac",
-			"restaurantId": 3,
-			"price": 200
-		},
-		{
-			"id": 8,
-			"name": "Chicken Sandwich",
-			"restaurantId": 4,
-			"price": 200
-		},
-		{
-			"id": 9,
-			"name": "Large Mashroom Beef Sandwich",
-			"restaurantId": 5,
-			"price": 200
-		},
-		{
-			"id": 10,
-			"name": "High Top",
-			"restaurantId": 6,
-			"price": 200
-		},
-		{
-			"id": 11,
-			"name": "High Top With Livre",
-			"restaurantId": 6,
-			"price": 200
-		},
-		{
-			"id": 12,
-			"name": "High Top With Sausage",
-			"restaurantId": 6,
-			"price": 200
 		}
 	]
 }
