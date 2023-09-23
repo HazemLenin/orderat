@@ -1,38 +1,83 @@
-import { useContext, useState } from "react";
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Map from "./Pages/Map";
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import Menu from "./pages/Menu";
 import AddressContext from "./contexts/AddressContext";
 import RestaurantsPage from "./pages/RestaurantsPage";
+import Checkout from "./pages/Checkout";
 import Navbar from "./components/navbar";
-import { createContext } from "react";
-import { useEffect } from "react";
-import { data } from "autoprefixer";
-import { CartContext } from "./components/cart";
-
+import CartContext from "./contexts/CartContext";
+import PopupIcon from "./components/CartPopup";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import { DndProvider } from "react-dnd";
+import data from "./data.json";
 
 function App() {
-  const cartlogic = useContext(CartContext)
 	const [address, setAddress] = useState({
 		lat: 31.25214048726485,
 		lng: 30.009838471967534,
 		isMap: true,
 	});
+	const [cart, setCart] = useState([]);
+	//finding the item by id in the cart
+	let add = (restaurantId, productId) => {
+		let restaurant = data.restaurants.find((r) => r.id == restaurantId);
+		let product = restaurant.products.find((p) => p.id == productId);
+
+		let oldProduct = cart.find(
+			(p) => p.id == product.id && p.restaurantId == restaurant.id
+		);
+		if (oldProduct === undefined) {
+			product.amount = 1;
+			product.restaurantId = restaurantId;
+			//adding the item into the cart
+			setCart([...cart, product]);
+		} else {
+			//if the item was already in the cart
+			let newCart = cart.map((item) => {
+				if (item.id == product.id && item.restaurantId == restaurant.id) {
+					item.amount++;
+				}
+				return item;
+			});
+			setCart(newCart);
+		}
+	};
+	//A remove function for the immediately remove button
+	let remove = (id) => {
+		setCart(cart.filter((item) => item.id != id));
+	};
+	//Decreasing the amount
+	let decreaseAmount = (id) => {
+		let amountCart = cart.map((item) => {
+			if (item.id == id) {
+				item.amount--;
+			}
+			return item;
+		});
+		//Remove the item if the decreasing came till
+		amountCart = amountCart.filter((i) => i.amount > 0);
+		setCart(amountCart);
+	};
 
 	return (
-		<AddressContext.Provider value={[address, setAddress]}>
-			<BrowserRouter>
-    <Navbar/>
-				<Routes>
-            <Route path="/" element={<RestaurantsPage />} />
-					<Route path="/restaurants/:id" element={<Menu />} />
-					<Route path="/address" element={<Map />} />
-            < Route path="/Checkout" element={<Checkout/>} />
-				</Routes>
-			</BrowserRouter>
-		</AddressContext.Provider>
+		<DndProvider backend={HTML5Backend}>
+			<CartContext.Provider value={[cart, add, remove, decreaseAmount]}>
+				<AddressContext.Provider value={[address, setAddress]}>
+					<BrowserRouter>
+						<Navbar />
+						<Routes>
+							<Route path="/" element={<RestaurantsPage />} />
+							<Route path="/restaurants/:id" element={<Menu />} />
+							<Route path="/address" element={<Map />} />
+							<Route path="/Checkout" element={<Checkout />} />
+						</Routes>
+						<PopupIcon />
+					</BrowserRouter>
+				</AddressContext.Provider>
+			</CartContext.Provider>
+		</DndProvider>
 	);
 }
 

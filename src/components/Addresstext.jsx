@@ -12,7 +12,6 @@ function Addresstext() {
 			lng: 30.009838471967534,
 			address: addressRef.current.value,
 		});
-		console.log(address);
 	}
 
 	return (
@@ -29,7 +28,7 @@ function Addresstext() {
 			<br />
 			<button
 				type="submit"
-				className="border-4 rounded border-red-700 ml-10 bg-red-700 text-white"
+				className="border-4 rounded border-red-600 ml-10 bg-red-600 text-white"
 			>
 				Save Address
 			</button>
