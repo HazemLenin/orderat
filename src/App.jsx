@@ -6,7 +6,7 @@ import Menu from "./pages/Menu";
 import AddressContext from "./contexts/AddressContext";
 import RestaurantsPage from "./pages/RestaurantsPage";
 import Checkout from "./pages/Checkout";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import CartContext from "./contexts/CartContext";
 import PopupIcon from "./components/CartPopup";
 import { HTML5Backend } from "react-dnd-html5-backend";
