@@ -4,10 +4,6 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  fontFamily: {
-    'display': ['"Kaushan_Script"'],
-    'body': ['"Open Sans"'],
-  },
   theme: {
     extend: {},
   },

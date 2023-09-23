@@ -29,6 +29,7 @@ function App() {
             <Route path="/" element={<RestaurantsPage />} />
 					<Route path="/restaurants/:id" element={<Menu />} />
 					<Route path="/address" element={<Map />} />
+            < Route path="/Checkout" element={<Checkout/>} />
 				</Routes>
 			</BrowserRouter>
 		</AddressContext.Provider>
