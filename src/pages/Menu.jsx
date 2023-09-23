@@ -35,7 +35,7 @@ function Menu() {
               <img
                 src={pic}
                 alt=""
-                className="absolute left-0 -z-10 pr-4 py-auto w-32 h-24 object-cover h-full"
+                className="absolute left-0 -z-10 pr-4 py-auto w-32  object-cover h-full"
               />
               <h1 className="ml-28 my-auto">
                 {product.name}
