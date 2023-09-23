@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import RestaurantCard from "../components/RestaurantCard";
+import SearchBar from "./SearchBar";
 function Restaurant() {
   const [selected, setSelected] = useState("Food");
   return (
@@ -57,6 +58,8 @@ function Restaurant() {
           )}
         </div>
       </div>
+      <SearchBar className="items-center align-middle justify-center mx-auto text-center text-justify" />
+
       <div className="grid grid-cols-3 gap-10 mt-20">
         {data.restaurants
           .filter((restaurant) => restaurant.category == selected)
