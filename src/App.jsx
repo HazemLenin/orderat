@@ -5,7 +5,7 @@ import Map from "./Pages/Map";
 import { createContext, useState } from "react";
 import Menu from "./pages/Menu";
 import AddressContext from "./contexts/AddressContext";
-import Restaurant from "./pages/Restaurant";
+import RestaurantsPage from "./pages/RestaurantsPage";
 import Navbar from "./components/navbar";
 import { createContext } from "react";
 import { useEffect } from "react";
@@ -26,7 +26,7 @@ function App() {
 			<BrowserRouter>
     <Navbar/>
 				<Routes>
-            <Route path="/" element={<Restaurant />} />
+            <Route path="/" element={<RestaurantsPage />} />
 					<Route path="/restaurants/:id" element={<Menu />} />
 					<Route path="/address" element={<Map />} />
 				</Routes>
