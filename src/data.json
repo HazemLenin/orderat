@@ -382,25 +382,186 @@
       ]
     },
     {
-      "id": 11,
-      "name": "Dunkin",
-      "rate": 3,
+      "id": 12,
+      "name": "Krispy Kreme",
+      "rate": 4,
       "category": "desert",
       "products": [
         {
           "id": 1,
-          "name": "Mix Donuts Box Of 3 Pieces",
-          "price": 65
+          "name": "Lotus Biscoff Doughnut",
+          "price": 45
         },
         {
           "id": 2,
-          "name": "Eclair",
-          "price": 25
+          "name": "Powderd Strawberry",
+          "price": 39
         },
         {
           "id": 3,
-          "name": "Coffe Ring",
-          "price": 25
+          "name": "Original Glazed",
+          "price": 33
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Puffy Pops",
+      "rate": 4.7,
+      "category": "desert",
+      "products": [
+        {
+          "id": 1,
+          "name": "Half & Half Puffy Pops",
+          "price": 80
+        },
+        {
+          "id": 2,
+          "name": "Lotus Cookies",
+          "price": 75
+        },
+        {
+          "id": 3,
+          "name": "Family Size 36 Pieces",
+          "price": 315
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Cinnabon",
+      "rate": 4,
+      "category": "desert",
+      "products": [
+        {
+          "id": 1,
+          "name": "Caramel Pecanbon Roll",
+          "price":114 
+        },
+        {
+          "id": 2,
+          "name": "Cinnabon Bites",
+          "price": 55
+        },
+        {
+          "id": 3,
+          "name": "Classic Chocobon Roll",
+          "price": 90
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Starbucks",
+      "rate": 4,
+      "category": "drinks",
+      "products": [
+        {
+          "id": 1,
+          "name": "Cafe Latte",
+          "price":85
+        },
+        {
+          "id": 2,
+          "name": "Blonde Latte",
+          "price": 85
+        },
+        {
+          "id": 3,
+          "name": "Ice Amricano",
+          "price": 75
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "SooTea",
+      "rate": 4,
+      "category": "drinks",
+      "products": [
+        {
+          "id": 1,
+          "name": "Vanila",
+          "price":55
+        },
+        {
+          "id": 2,
+          "name": "Mango",
+          "price": 60
+        },
+        {
+          "id": 3,
+          "name": "Fayrouz",
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "On The Run",
+      "rate": 4,
+      "category": "drinks",
+      "products": [
+        {
+          "id": 1,
+          "name": "Green tea",
+          "price":45
+        },
+        {
+          "id": 2,
+          "name": "Iced Coffee",
+          "price": 85
+        },
+        {
+          "id": 3,
+          "name": "Ice Cream",
+          "price": 90
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Pickn Go",
+      "rate": 4,
+      "category": "drinks",
+      "products": [
+        {
+          "id": 1,
+          "name": "Tea",
+          "price":24 
+        },
+        {
+          "id": 2,
+          "name": "Lemon Juice",
+          "price": 75
+        },
+        {
+          "id": 3,
+          "name": "Ice Tea",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Hassan",
+      "rate": 4,
+      "category": "drinks",
+      "products": [
+        {
+          "id": 1,
+          "name": "Strawberry",
+          "price":35
+        },
+        {
+          "id": 2,
+          "name": "Lotus Milk Shake",
+          "price": 55
+        },
+        {
+          "id": 3,
+          "name": "Kasab",
+          "price": 10
         }
       ]
     }
