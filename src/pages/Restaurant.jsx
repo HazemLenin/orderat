@@ -1,34 +1,67 @@
 import { useState } from "react";
 import data from "../data.json";
-
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import RestaurantCard from "../components/RestaurantCard";
 function Restaurant() {
   const [selected, setSelected] = useState("Food");
   return (
     <>
-      <button onClick={() => setSelected("Food")}>Food</button>
-      <button onClick={() => setSelected("desert")}>Desert</button>
-      <button onClick={() => setSelected("drinks")}>Drinkd</button>
-      <div className="grid grid-cols-3 gap-10">
+      <div className=" items-center text-center flex gap-20">
+        <div className="gap-10 flex items-center mt-10 mx-auto">
+          {selected === "Food" ? (
+            <button
+              className="bg-red-600 border-2 w-40 h-24 border-red-600 rounded-xl text-white text-4xl  shadow-lg shadow-black "
+              onClick={() => setSelected("Food")}
+            >
+              Food
+            </button>
+          ) : (
+            <button
+              className="bg-red-600 border-2 w-32 h-12 border-red-600 rounded-xl text-white text-3xl  shadow-xl shadow-gray-300"
+              onClick={() => setSelected("Food")}
+            >
+              Food
+            </button>
+          )}
+          {selected == "desert" ? (
+            <button
+              className="bg-red-600 border-2 w-40 h-24 border-red-600 rounded-xl text-white text-3xl  shadow-lg shadow-black"
+              onClick={() => setSelected("desert")}
+            >
+              Dessert
+            </button>
+          ) : (
+            <button
+              className="bg-red-600 border-2 w-32 h-12 border-red-600 rounded-xl text-white text-3xl shadow-xl shadow-gray-300"
+              onClick={() => setSelected("desert")}
+            >
+              Dessert
+            </button>
+          )}
+          {selected == "drinks" ? (
+            <button
+              className="bg-red-600 border-2 w-40 h-24 border-red-600 rounded-xl text-white text-3xl shadow-lg shadow-black"
+              onClick={() => setSelected("drinks")}
+            >
+              Drinks
+            </button>
+          ) : (
+            <button
+              className="bg-red-600 border-2 w-32 h-12 border-red-600 rounded-xl text-white text-3xl shadow-xl shadow-gray-300"
+              onClick={() => setSelected("drinks")}
+            >
+              Drinks
+            </button>
+          )}
+        </div>
+      </div>
+      <div className="grid grid-cols-3 gap-10 mt-20">
         {data.restaurants
           .filter((restaurant) => restaurant.category == selected)
           .map((restaurant) => (
-            <Link
-              to={`/restaurants/${restaurant.id}`}
-              key={restaurant.id}
-              style={{ backgroundImage: `url('${restaurant.image}')` }}
-              className="
-          mx-auto w-96 bg-no-repeat bg-contain h-96  mt-20 text-center text-2xl rounded-xl  hover:shadow-2xlxl  "
-            >
-              <div className="bg-transparent text-transparent hover:text-white  hover:bg-red-600  w-96 h-96 rounded-xl hover:border-4 border-red-600 hover:opacity-80">
-                <h1 className=" mt-20 font-serif ">{restaurant.name}</h1>
-                <span className="font-serif  ">
-                  sdjkvhhhhhhslhjkgkwkeqwkd hkwehrukwekywe khrkuwehrhwejrukhdj
-                  khwkdhmwadujawjdjhjhgj
-                </span>
-              </div>
-
-              <div></div>
-            </Link>
+            <RestaurantCard key={restaurant.id} restaurant={restaurant} />
           ))}
       </div>
     </>

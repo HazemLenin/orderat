@@ -3,212 +3,242 @@
     {
       "id": 1,
       "name": "KFC",
-      "rate": 3,
+      "rate": 1,
       "category": "Food",
-      "image": "/MC.png"
+      "image": "/kfc.png",
+      "description": "Fried chicken, Sandwiches"
     },
     {
       "id": 2,
       "name": "McDonald's",
       "rate": 3,
       "category": "Food",
-      "image": "/MC.png"
+      "image": "/MC.png",
+      "description": "Burgers, Fast Food, Breakfast"
     },
     {
       "id": 3,
-      "name": "BAZOKA",
+      "name": "BAZOOKA",
       "rate": 3,
       "category": "Food",
-      "image": "/MC.png"
+      "image": "/bazooka.jpg",
+      "description": "Sandwiches, Burgers, Fast Food"
     },
     {
       "id": 4,
       "name": "Koshry Elzaeem",
       "rate": 3,
       "category": "Food",
-      "image": "/MC.png"
+      "image": "/koshry.png",
+      "description": "Koshary, Egyptian"
     },
     {
       "id": 5,
-      "name": "PAPA JOHNS",
+      "name": "PAPA JOHN'S",
       "rate": 3,
       "category": "Food",
-      "image": "/MC.png"
+      "image": "/papa-johns.jpg",
+      "description": "Pizza, Fast Food, Pasta"
     },
     {
       "id": 6,
       "name": "Pizza hut",
       "rate": 3,
       "category": "Food",
-      "image": "/MC.png"
+      "image": "/Pizza Hut.png",
+      "description": "Pizza, Pasta, Street Food"
     },
     {
       "id": 7,
       "name": "Holmes",
       "rate": 3,
       "category": "Food",
-      "image": "/MC.png"
+      "image": "/holmes.jpg",
+      "description": "Burgers, Fast Food, Chicken"
     },
     {
       "id": 8,
       "name": "Hadra Mout",
       "rate": 3,
       "category": "Food",
-      "image": "/MC.png"
+      "image": "/hadra.jpg",
+      "description": "Mandi, Chicken, Grills,Salad"
     },
     {
       "id": 9,
       "name": "Crepy",
       "rate": 3,
       "category": "Food",
-      "image": "/MC.png"
+      "image": "/crepy.jpg",
+      "description": "Crepes, American, Sandwiches"
     },
     {
       "id": 10,
       "name": "Reghef Shawerma",
       "rate": 3,
       "category": "Food",
-      "image": "/MC.png"
+      "image": "/reghef.jpg",
+      "description": "Shawarma, Sandwiches"
     },
     {
       "id": 11,
       "name": "DUNKIN",
       "rate": 3,
       "category": "desert",
-      "image": "/MC.png"
+      "image": "/dunn.jpg",
+      "description": " Donuts, Desserts,Coffee, Sandwiches"
     },
     {
       "id": 12,
       "name": "Krispy kreme",
       "rate": 3,
       "category": "desert",
-      "image": "/MC.png"
+      "image": "/kris.jpg",
+      "description": "Donuts, Desserts,Coffee"
     },
     {
       "id": 13,
       "name": "Nutopia",
       "rate": 3,
       "category": "desert",
-      "image": "/MC.png"
+      "image": "/nutopia.png",
+      "description": "Desserts, Crepes, Cafe"
     },
     {
       "id": 14,
       "name": "Puffy Pops",
       "rate": 3,
       "category": "desert",
-      "image": "/MC.png"
+      "image": "/puffy.png",
+      "description": "Desserts, Cakes, Coffee"
     },
     {
       "id": 15,
       "name": "Cinnabon",
       "rate": 3,
       "category": "desert",
-      "image": "/MC.png"
+      "image": "/cinnabonn.png",
+      "description": "Desserts, Beverages,Cinnabon, Coffee"
     },
     {
       "id": 16,
       "name": "B.labn",
       "rate": 3,
       "category": "desert",
-      "image": "/blbn.png"
+      "image": "/blbn.png",
+      "description": "Desserts, Ice cream, Juice"
     },
     {
       "id": 17,
       "name": "Fluckiger",
       "rate": 3,
       "category": "desert",
-      "image": "/MC.png"
+      "image": "/fluckiger.png",
+      "description": "Cakes, Bakery, Desserts"
     },
     {
       "id": 18,
       "name": "Genoise",
       "rate": 3,
       "category": "desert",
-      "image": "/MC.png"
+      "image": "/gn.jpg",
+      "description": "Desserts, Cakes, Bakery"
     },
     {
       "id": 19,
       "name": "Trianon",
       "rate": 3,
       "category": "desert",
-      "image": "/MC.png"
+      "image": "/tr.png",
+      "description": "Desserts, Cakes, Bakery"
     },
     {
       "id": 20,
       "name": "Classique Patisserie",
       "rate": 3,
       "category": "desert",
-      "image": "/MC.png"
+      "image": "/cl.jpg",
+      "description": "Desserts, Cakes, Bakery"
     },
     {
       "id": 21,
       "name": "Starbucks",
       "rate": 3,
       "category": "drinks",
-      "image": "/MC.png"
+      "image": "/starbucks.png",
+      "description": "Coffee, Beverages"
     },
     {
       "id": 22,
       "name": "SooTea",
       "rate": 3,
       "category": "drinks",
-      "image": "/MC.png"
+      "image": "/sootea.jpg",
+      "description": "Bubble Tea, Beverages"
     },
     {
       "id": 23,
       "name": "On The Run",
       "rate": 3,
       "category": "drinks",
-      "image": "/MC.png"
+      "image": "/on.jpg",
+      "description": "Convenience Store, Coffee & Tea"
     },
     {
       "id": 24,
       "name": "Pick'n Go",
       "rate": 3,
       "category": "drinks",
-      "image": "/MC.png"
+      "image": "/pi.png",
+      "description": "Coffee, Beverages"
     },
     {
       "id": 25,
       "name": "Hassan",
       "rate": 3,
       "category": "drinks",
-      "image": "/MC.png"
+      "image": "/hassan.jpg",
+      "description": "Fresh Juice, Coktails"
     },
     {
       "id": 26,
       "name": "Mecca Juice",
       "rate": 3,
       "category": "drinks",
-      "image": "/MC.png"
+      "image": "/mecca.jpg",
+      "description": "Juices, Fruits, Beverages"
     },
     {
       "id": 27,
       "name": "Cilantro",
       "rate": 3,
       "category": "drinks",
-      "image": "/MC.png"
+      "image": "/cil.png",
+      "description": "Coffee, International, Cafe"
     },
     {
       "id": 28,
       "name": "Costa Coffee",
       "rate": 3,
       "category": "drinks",
-      "image": "/MC.png"
+      "image": "/Costa_Coffee.png",
+      "description": "Coffee, Sandwiches, Desserts"
     },
     {
       "id": 29,
       "name": "Cups & Candy",
       "rate": 3,
       "category": "drinks",
-      "image": "/MC.png"
+      "image": "/cups.jpg",
+      "description": "Coffee, Desserts, Beverages"
     },
     {
       "id": 30,
       "name": "Bruno's",
       "rate": 3,
       "category": "drinks",
-      "image": "/MC.png"
+      "image": "/bruno.jpg",
+      "description": "Beverages, Coffee, Desserts"
     }
   ]
 }
