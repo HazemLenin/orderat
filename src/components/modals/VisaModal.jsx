@@ -1,6 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FormInput from "./FormInput";
 import "./VisaModel.css";
 import { useState } from "react";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const VisaModal = (props) => {
 	const [Values, setValues] = useState({
@@ -78,6 +80,9 @@ const VisaModal = (props) => {
 	return (
 		<div class="w-2/3">
 			<form onSubmit={props.submitFunc} className="p-10 visa-form">
+				<button className="ml-auto" onClick={() => props.closeFunc()}>
+					<FontAwesomeIcon icon={faXmark} />
+				</button>
 				<h1 className="text-4xl mb-5">VISA</h1>
 				<div className="md:grid grid-cols-2">
 					{inputs.map((input) => (

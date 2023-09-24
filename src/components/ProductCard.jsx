@@ -30,7 +30,6 @@ function ProductCard({ product, restaurantId }) {
 	];
 
 	const colors = ["GREEN", "SKY", "PURPLE", "RED", "YELLOW"];
-	let color = colors[Math.floor(Math.random() * colors.length)];
 
 	let backgroundClass;
 	switch (product.color) {
