@@ -2,7 +2,12 @@ import { useState } from "react";
 import data from "../data.json";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import {
+	faIceCream,
+	faMartiniGlass,
+	faPizzaSlice,
+	faStar,
+} from "@fortawesome/free-solid-svg-icons";
 import RestaurantCard from "../components/restaurants/RestaurantCard";
 import SearchBar from "./SearchBar";
 function Restaurant() {
@@ -17,6 +22,7 @@ function Restaurant() {
 							className="bg-red-600 border-2 w-32 h-12 scale-125 transition-all border-red-600 rounded text-white text-xl shadow-xl"
 							onClick={() => setSelected("Food")}
 						>
+							<FontAwesomeIcon icon={faPizzaSlice} />
 							Food
 						</button>
 					) : (
@@ -24,6 +30,7 @@ function Restaurant() {
 							className="bg-red-600 border-2 w-32 h-12 transition-all border-red-600 rounded-md text-white text-xl"
 							onClick={() => setSelected("Food")}
 						>
+							<FontAwesomeIcon icon={faPizzaSlice} />
 							Food
 						</button>
 					)}
@@ -32,6 +39,7 @@ function Restaurant() {
 							className="bg-red-600 border-2 w-32 h-12 scale-125 transition-all border-red-600 rounded-md text-white text-xl shadow-xl"
 							onClick={() => setSelected("desert")}
 						>
+							<FontAwesomeIcon icon={faIceCream} />
 							Dessert
 						</button>
 					) : (
@@ -39,6 +47,7 @@ function Restaurant() {
 							className="bg-red-600 border-2 w-32 h-12 transition-all border-red-600 rounded-md text-white text-xl"
 							onClick={() => setSelected("desert")}
 						>
+							<FontAwesomeIcon icon={faIceCream} />
 							Dessert
 						</button>
 					)}
@@ -47,6 +56,7 @@ function Restaurant() {
 							className="bg-red-600 border-2 w-32 h-12 scale-125 transition-all border-red-600 rounded-md text-white text-xl shadow-xl"
 							onClick={() => setSelected("drinks")}
 						>
+							<FontAwesomeIcon icon={faMartiniGlass} />
 							Drinks
 						</button>
 					) : (
@@ -54,6 +64,7 @@ function Restaurant() {
 							className="bg-red-600 border-2 w-32 h-12 transition-all border-red-600 rounded-md text-white text-xl"
 							onClick={() => setSelected("drinks")}
 						>
+							<FontAwesomeIcon icon={faMartiniGlass} />
 							Drinks
 						</button>
 					)}

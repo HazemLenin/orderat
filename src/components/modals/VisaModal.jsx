@@ -89,10 +89,7 @@ const VisaModal = (props) => {
 						/>
 					))}
 				</div>
-				<button
-					onClick={props.closeFunc}
-					className="mx-auto bg-red-600 text-white w-28 h-14 rounded-md mt-5 block"
-				>
+				<button className="mx-auto bg-red-600 text-white w-28 h-14 rounded-md mt-5 block">
 					Submit
 				</button>
 			</form>

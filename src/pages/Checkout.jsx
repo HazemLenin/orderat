@@ -19,8 +19,8 @@ function Checkout() {
 	const [isCreditOpened, setIsCreditOpened] = useState(false);
 
 	return (
-		<div className="flex w-full gap-20 px-5 pt-5">
-			<div className="w-2/3">
+		<div className="flex flex-col-reverse md:flex-row w-full gap-20 px-5 pt-5">
+			<div className="md:w-2/3">
 				<h1 className="text-4xl text-red-600">Checkout</h1>
 				<Map />
 				<Delivery />
@@ -46,7 +46,7 @@ function Checkout() {
 				</div>
 			</div>
 
-			<div className="w-1/3  ">
+			<div className="md:w-1/3  ">
 				<Cartdata products={cart} />
 			</div>
 			{!!isCreditOpened && (
@@ -61,10 +61,7 @@ function Checkout() {
 				</div>
 			)}
 			{!!isSuccessOpened && (
-				<div
-					closeFunc={() => setIsSuccessOpened(false)}
-					className="flex justify-center items-center fixed z-50 inset-0 w-screen h-screen bg-black/50"
-				>
+				<div className="flex justify-center items-center fixed z-50 inset-0 w-screen h-screen bg-black/50">
 					<SucssesModal />
 				</div>
 			)}

@@ -93,12 +93,12 @@ function ProductCard({ product, restaurantId }) {
 		<div
 			className="
                 overflow-hidden
-                h-28
+                md:h-28
                 hover:shadow-2xl
                 transition-all
                 rounded-2xl
                 w-full
-                flex
+                md:flex
                 justify-between
                 items-center
 				gap-5	"
@@ -106,7 +106,7 @@ function ProductCard({ product, restaurantId }) {
 			ref={drag}
 		>
 			<div
-				className={`flex justify-center items-center rounded-md h-20 w-20 text-4xl ml-5 ${backgroundClass}`}
+				className={`hidden md:flex justify-center items-center rounded-md h-20 w-20 text-4xl ml-5 ${backgroundClass}`}
 			>
 				{icon}
 			</div>
