@@ -1,9 +1,7 @@
 import "./index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Map from "./Pages/Map";
 import { createContext, useContext, useState } from "react";
 import Menu from "./pages/Menu";
-import AddressContext from "./contexts/AddressContext";
 import RestaurantsPage from "./pages/RestaurantsPage";
 import Checkout from "./pages/Checkout";
 import Navbar from "./components/Navbar";
@@ -12,6 +10,7 @@ import PopupIcon from "./components/CartPopup";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 import data from "./data.json";
+import Footer from "./components/Footer";
 
 function App() {
 	const [address, setAddress] = useState({
@@ -49,9 +48,9 @@ function App() {
 		setCart(cart.filter((item) => item.id != id));
 	};
 	//Decreasing the amount
-	let decreaseAmount = (id) => {
+	let decreaseAmount = (restaurantId, productId) => {
 		let amountCart = cart.map((item) => {
-			if (item.id == id) {
+			if (item.id == productId && item.restaurantId == restaurantId) {
 				item.amount--;
 			}
 			return item;
@@ -64,18 +63,18 @@ function App() {
 	return (
 		<DndProvider backend={HTML5Backend}>
 			<CartContext.Provider value={[cart, add, remove, decreaseAmount]}>
-				<AddressContext.Provider value={[address, setAddress]}>
-					<BrowserRouter>
-						<Navbar />
+				<BrowserRouter>
+					<Navbar />
+					<div className="pt-14">
 						<Routes>
 							<Route path="/" element={<RestaurantsPage />} />
 							<Route path="/restaurants/:id" element={<Menu />} />
-							<Route path="/address" element={<Map />} />
-							<Route path="/Checkout" element={<Checkout />} />
+							<Route path="/checkout" element={<Checkout />} />
 						</Routes>
-						<PopupIcon />
-					</BrowserRouter>
-				</AddressContext.Provider>
+					</div>
+					<PopupIcon />
+					<Footer />
+				</BrowserRouter>
 			</CartContext.Provider>
 		</DndProvider>
 	);

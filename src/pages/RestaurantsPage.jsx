@@ -1,13 +1,13 @@
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/restaurants/HeroSection";
 import Restaurant from "./Restaurant";
 import SearchBar from "./SearchBar";
 
 export default function RestaurantsPage() {
-  return (
-    <>
-      <HeroSection />
+	return (
+		<>
+			<HeroSection />
 
-      <Restaurant />
-    </>
-  );
+			<Restaurant />
+		</>
+	);
 }

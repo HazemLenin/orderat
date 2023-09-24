@@ -1,8 +1,8 @@
-import FormInput from "../components/FormInput";
+import FormInput from "./FormInput";
 import "./VisaModel.css";
 import { useState } from "react";
 
-const VisaModal = () => {
+const VisaModal = (props) => {
 	const [Values, setValues] = useState({
 		Firstname: "",
 		Lastname: "",
@@ -44,11 +44,11 @@ const VisaModal = () => {
 		},
 		{
 			id: 4,
-			name: "css",
+			name: "CSV",
 			type: "password",
-			placeholder: "Css",
+			placeholder: "CSV",
 			errorMessage: "password does not match it should include 4 characters!",
-			label: "Css",
+			label: "CSV",
 			required: true,
 		},
 		{
@@ -71,27 +71,30 @@ const VisaModal = () => {
 		},
 	];
 
-	const handlesubmit = (e) => {
-		e.preventDefault();
-	};
-
 	const onChange = (e) => {
 		setValues({ ...Values, [e.target.name]: e.target.value });
 	};
 
 	return (
-		<div className="app">
-			<form onSubmit={handlesubmit}>
-				<h1>VISA</h1>
-				{inputs.map((input) => (
-					<FormInput
-						key={input.id}
-						{...input}
-						value={Values[input.name]}
-						onChange={onChange}
-					/>
-				))}
-				<button className="button1">Submit</button>
+		<div class="w-2/3">
+			<form onSubmit={props.submitFunc} className="p-10 visa-form">
+				<h1 className="text-4xl mb-5">VISA</h1>
+				<div className="md:grid grid-cols-2">
+					{inputs.map((input) => (
+						<FormInput
+							key={input.id}
+							{...input}
+							value={Values[input.name]}
+							onChange={onChange}
+						/>
+					))}
+				</div>
+				<button
+					onClick={props.closeFunc}
+					className="mx-auto bg-red-600 text-white w-28 h-14 rounded-md mt-5 block"
+				>
+					Submit
+				</button>
 			</form>
 		</div>
 	);

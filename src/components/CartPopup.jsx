@@ -1,14 +1,15 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext, useState } from "react";
-import pic from "./trolley.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faMinus } from "@fortawesome/free-solid-svg-icons";
 import CartContext from "../contexts/CartContext";
 import { Link } from "react-router-dom";
 import { useDrop } from "react-dnd";
+import { useLocation } from "react-router-dom";
 
 const PopupIcon = () => {
 	const [cart, add, remove, decreaseAmount] = useContext(CartContext);
+	const location = useLocation();
 
 	const [{ isOver }, drop] = useDrop(
 		() => ({
@@ -34,8 +35,8 @@ const PopupIcon = () => {
 			>
 				<FontAwesomeIcon icon={faCartShopping} />
 			</button>
-			{!!cart.length && (
-				<div className="absolute bottom-16 mb-3  right-2 rounded-lg w-60 shadow-xl p-5 bg-white  ">
+			{!!cart.length && location.pathname != "/checkout" && (
+				<div className="absolute bottom-16 mb-3 right-2 rounded-lg w-72 shadow-xl p-5 bg-white  ">
 					<ul>
 						{cart.map((item, index) => (
 							<li className="flex justify-between" key={index}>
@@ -50,7 +51,7 @@ const PopupIcon = () => {
 						))}
 					</ul>
 					<Link
-						to="/Checkout"
+						to="/checkout"
 						className="bg-red-600 w-full mt-5 block rounded text-center text-white"
 					>
 						CheckOut

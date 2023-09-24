@@ -1,72 +1,74 @@
-import Cartdata from "../components/Cartdata";
-import formatcurrency from "../components/Formatcurrency";
-import Delivery from "../components/Delivery";
-import Total from "../components/Total";
-import Cartcost from "../components/Cartcost";
-import Taxes from "../components/Taxes";
-let products = [
-  {
-    id: 1,
-    name: "Dinner box",
-    price: 100,
-    quantity: 5,
-  },
-  {
-    id: 2,
-    name: "Fried Chicken",
-    price: 200,
-    quantity: 3,
-  },
-  {
-    id: 3,
-    name: "Small Burger",
-    price: 300,
-    quantity: 1,
-  },
-  {
-    id: 4,
-    name: "Happy Meal",
-    price: 400,
-    quantity: 8,
-  },
-  {
-    id: 5,
-    name: "Chicken Macdo",
-    price: 500,
-    quantity: 8,
-  },
-];
+import Cartdata from "../components/checkout/Cartdata";
+import formatcurrency from "../components/checkout/Formatcurrency";
+import Delivery from "../components/checkout/Delivery";
+import Total from "../components/checkout/Total";
+import Cartcost from "../components/checkout/Cartcost";
+import Taxes from "../components/checkout/Taxes";
+import CartContext from "../contexts/CartContext";
+import { useContext, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCreditCard, faDollar } from "@fortawesome/free-solid-svg-icons";
+import Map from "../components/checkout/Map";
+import VisaModal from "../components/modals/VisaModal";
+import SucssesModal from "../components/modals/SucssesModal";
+
 function Checkout() {
-  return (
-    <div className="flex w-full gap-20">
-      <div className="w-2/3 text-white">
-        <Delivery />
+	const [cart, add, remove, decreaseAmount] = useContext(CartContext);
 
-        <br />
+	const [isSuccessOpened, setIsSuccessOpened] = useState(false);
+	const [isCreditOpened, setIsCreditOpened] = useState(false);
 
-        <Taxes products={products} />
+	return (
+		<div className="flex w-full gap-20 px-5 pt-5">
+			<div className="w-2/3">
+				<h1 className="text-4xl text-red-600">Checkout</h1>
+				<Map />
+				<Delivery />
+				<Taxes products={cart} />
+				<Cartcost products={cart} />
+				<Total products={cart} />
 
-        <br />
+				<div className="flex justify-around w-full">
+					<button
+						onClick={() => setIsSuccessOpened(true)}
+						className="flex justify-center items-center gap-2 rounded-md bg-red-600 text-white w-32 h-12 text-xl"
+					>
+						<FontAwesomeIcon icon={faDollar} />
+						Cash
+					</button>
+					<button
+						onClick={() => setIsCreditOpened(true)}
+						className="flex justify-center items-center gap-2 rounded-md bg-red-600 text-white w-32 h-12 text-xl"
+					>
+						<FontAwesomeIcon icon={faCreditCard} />
+						Credit
+					</button>
+				</div>
+			</div>
 
-        <Cartcost products={products} />
-        <br />
-
-        <Total products={products} />
-        <br />
-        <div className="ml-60">
-          <button className="rounded-xl bg-red-600 text-white w-28 h-12 text-2xl ">
-            Cash
-          </button>
-          <button className="rounded-xl bg-red-600 text-white  w-28 h-12 ml-20 text-2xl">
-            Credit
-          </button>
-        </div>
-      </div>
-
-      <div className="w-1/3  ">
-        <Cartdata products={products} />
-      </div>
-    </div>
-  );
+			<div className="w-1/3  ">
+				<Cartdata products={cart} />
+			</div>
+			{!!isCreditOpened && (
+				<div className="flex justify-center items-center fixed z-50 inset-0 w-screen h-screen bg-black/50">
+					<VisaModal
+						submitFunc={(e) => {
+							e.preventDefault();
+							setIsCreditOpened(false);
+							setIsSuccessOpened(true);
+						}}
+					/>
+				</div>
+			)}
+			{!!isSuccessOpened && (
+				<div
+					closeFunc={() => setIsSuccessOpened(false)}
+					className="flex justify-center items-center fixed z-50 inset-0 w-screen h-screen bg-black/50"
+				>
+					<SucssesModal />
+				</div>
+			)}
+		</div>
+	);
 }
 export default Checkout;
