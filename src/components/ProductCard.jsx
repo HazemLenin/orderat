@@ -84,7 +84,6 @@ function ProductCard({ product }) {
 	const [{ isDragging }, drag] = useDrag(() => ({
 		type: "product",
 		item: {
-			restaurantId: restaurantId,
 			productId: product.id,
 		},
 	}));
