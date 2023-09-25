@@ -21,22 +21,18 @@ function App() {
 	});
 	const [cart, setCart] = useState([]);
 	//finding the item by id in the cart
-	let add = (restaurantId, productId) => {
-		let restaurant = data.restaurants.find((r) => r.id == restaurantId);
+	let add = (productId) => {
 		let product = restaurant.products.find((p) => p.id == productId);
 
-		let oldProduct = cart.find(
-			(p) => p.id == product.id && p.restaurantId == restaurant.id
-		);
+		let oldProduct = cart.find((p) => p.id == product.id);
 		if (oldProduct === undefined) {
 			product.amount = 1;
-			product.restaurantId = restaurantId;
 			//adding the item into the cart
 			setCart([...cart, product]);
 		} else {
 			//if the item was already in the cart
 			let newCart = cart.map((item) => {
-				if (item.id == product.id && item.restaurantId == restaurant.id) {
+				if (item.id == product.id) {
 					item.amount++;
 				}
 				return item;
@@ -49,9 +45,9 @@ function App() {
 		setCart(cart.filter((item) => item.id != id));
 	};
 	//Decreasing the amount
-	let decreaseAmount = (restaurantId, productId) => {
+	let decreaseAmount = (productId) => {
 		let amountCart = cart.map((item) => {
-			if (item.id == productId && item.restaurantId == restaurantId) {
+			if (item.id == productId) {
 				item.amount--;
 			}
 			return item;
@@ -63,10 +59,12 @@ function App() {
 
 	return (
 		<DndProvider backend={HTML5Backend}>
-			<CartContext.Provider value={[cart, add, remove, decreaseAmount, setCart]}>
+			<CartContext.Provider
+				value={[cart, add, remove, decreaseAmount, setCart]}
+			>
 				<BrowserRouter>
 					<Navbar />
-					<div className="pt-14">
+					<div className="pt-14 bg-gray-800">
 						<Routes>
 							<Route path="/" element={<RestaurantsPage />} />
 							<Route path="/restaurants/:id" element={<Menu />} />

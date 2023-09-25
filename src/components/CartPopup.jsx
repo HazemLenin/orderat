@@ -14,7 +14,7 @@ const PopupIcon = () => {
 	const [{ isOver }, drop] = useDrop(
 		() => ({
 			accept: "product",
-			drop: (item) => add(item.restaurantId, item.productId),
+			drop: (item) => add(item.productId),
 			collect: (monitor) => ({
 				isOver: !!monitor.isOver(),
 			}),

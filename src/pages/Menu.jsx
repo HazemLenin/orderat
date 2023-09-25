@@ -22,7 +22,7 @@ function Menu() {
 				<h1 className="text-6xl my-10 text-red-600">Menu</h1>
 				<div className="grid grid-cols-3  gap-10">
 					{restaurant.products.map((product) => (
-						<ProductCard product={product} key={product.id} restaurantId={id} />
+						<ProductCard product={product} key={product.id} />
 					))}
 				</div>
 			</div>

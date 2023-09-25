@@ -15,7 +15,7 @@ import CartContext from "../contexts/CartContext";
 import { useContext } from "react";
 import formatcurrency from "./checkout/Formatcurrency";
 
-function ProductCard({ product, restaurantId }) {
+function ProductCard({ product }) {
 	const [cart, add, remove, decreaseAmount] = useContext(CartContext);
 
 	const icons = [
@@ -116,7 +116,7 @@ function ProductCard({ product, restaurantId }) {
 				<p className="text-red-600"> {formatcurrency(product.price)}</p>
 			</h2>
 			<button
-				onClick={() => add(restaurantId, product.id)}
+				onClick={() => add(product.id)}
 				className="block mr-3 rounded-full h-10 w-10 text-red-600 hover:bg-red-600 hover:text-white transition-all"
 			>
 				<FontAwesomeIcon icon={faPlus} />

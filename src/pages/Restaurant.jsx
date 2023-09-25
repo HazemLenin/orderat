@@ -16,7 +16,7 @@ function Restaurant() {
 	return (
 		<>
 			<div className=" items-center text-center flex gap-20">
-				<div className="gap-10 flex items-center mt-10 mx-auto">
+				<div className="flex flex-col md:flex-row gap-10 items-center mt-10 mx-auto">
 					{selected === "Food" ? (
 						<button
 							className="bg-red-600 border-2 w-32 h-12 scale-125 transition-all border-red-600 rounded text-white text-xl shadow-xl"
@@ -91,7 +91,7 @@ function Restaurant() {
 				onChange={(e) => setSearch(e.target.value)}
 				placeholder="Search"
 			/>
-			<div className="md:grid grid-cols-3 gap-10 mt-20 px-5">
+			<div className="flex flex-col md:grid grid-cols-3 gap-10 mt-20 px-5">
 				{data.restaurants
 					.filter((restaurant) => restaurant.category == selected)
 					.filter(

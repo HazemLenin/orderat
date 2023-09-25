@@ -30,7 +30,7 @@ function Cartdata(props) {
 						</div>
 						<button
 							className="text-white"
-							onClick={() => decreaseAmount(product.restaurantId, product.id)}
+							onClick={() => decreaseAmount(product.id)}
 						>
 							<FontAwesomeIcon icon={faMinus} />
 						</button>
