@@ -44,7 +44,7 @@ function ProductCard({ product, restaurantId }) {
 			backgroundClass = "bg-purple-400 text-purple-600";
 			break;
 		case "RED":
-			backgroundClass = "bg-red-400 text-red-600";
+			backgroundClass = "bg-red-400 text-red-700";
 			break;
 		case "YELLOW":
 			backgroundClass = "bg-yellow-400 text-yellow-600";
@@ -104,7 +104,7 @@ function ProductCard({ product, restaurantId }) {
 				gap-5	"
 			key={product.id}
 			ref={drag}
-			style={{ cursor: 'move' }}
+			style={{ cursor: "move" }}
 		>
 			<div
 				className={`hidden md:flex justify-center items-center rounded-md h-20 w-20 text-4xl ml-5 ${backgroundClass}`}
@@ -115,11 +115,11 @@ function ProductCard({ product, restaurantId }) {
 			<h2>
 				{product.name}
 				<br />
-				<p className="text-red-600"> {formatcurrency(product.price)}</p>
+				<p className="text-red-700"> {formatcurrency(product.price)}</p>
 			</h2>
 			<button
 				onClick={() => add(restaurantId, product.id)}
-				className="block mr-3 rounded-full h-10 w-10 text-red-600 hover:bg-red-600 hover:text-white transition-all"
+				className="block mr-3 rounded-full h-10 w-10 text-red-700 hover:bg-red-700 hover:text-white transition-all"
 			>
 				<FontAwesomeIcon icon={faPlus} />
 			</button>

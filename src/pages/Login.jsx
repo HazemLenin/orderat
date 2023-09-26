@@ -1,68 +1,73 @@
+import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 import React, { useState } from "react";
 
-const LoginForm = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+export default function DefaultForm() {
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
-    const storedData = localStorage.getItem("userData");
-    if (storedData) {
-      const userData = JSON.parse(storedData);
-      if (email === userData.email && password === userData.password) {
-        alert("Login successful!");
-      } else {
-        alert("Invalid username or password");
-      }
-    } else {
-      alert("User not found");
-    }
-    setEmail("");
-    setPassword("");
-  };
+	const handleLogin = () => {
+		const storedData = localStorage.getItem("userData");
+		if (storedData) {
+			const userData = JSON.parse(storedData);
+			if (email === userData.email && password === userData.password) {
+				alert("Login successful!");
+			} else {
+				alert("Invalid username or password");
+			}
+		} else {
+			alert("User not found");
+		}
+		setEmail("");
+		setPassword("");
+	};
 
-  return (
-    <div className="items-center text-center font-serif  align-middle justify-center mx-auto gap-8 my-20">
-      <h1 className="text-red-600 text-3xl">Sign In</h1>
-      <br />
+	return (
+		<div className=" justify-center ">
+			<form className="pb-10 mt-10 h-full flex max-w-md flex-col gap-4 align-middle mx-auto text-center border-2 border-gray-300 shadow-xl ">
+				<h2 className=" mt-10 text-2xl text-red-700">Sign In</h2>
+				<div>
+					<div className="mt-2 block">
+						<Label htmlFor="email1" value="Your email" />
+					</div>
 
-      <label className="text-red-600 font-serif">
-        Email:
-      </label>
-      <input
-        className="border-2 border-red-600"
-        type="text"
-        placeholder="enter your email"
-        required
-         value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <br />
-      <br />
-      <label className="text-red-600" >
-        Password:
-      </label>
-      <input
-        className="border-2 border-red-600"
-        type="password"
-        placeholder="enter your password"
-        required
-         value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <h3 className="text-red-600/60 text-xs">Forgot your password?</h3>
-      <br />
-      <br />
-      <div>
-        <button 
-        onClick={()=> handleLogin()}
-          className="bg-red-600 text-white w-20 h-12 text-xl rounded-lg"
-          type="submit"
-        >
-          Sign in
-        </button>
-      </div>
-    </div>
-  );
-};
-
-export default LoginForm;
+					<input
+						className="border-2 h-8 rounded-lg w-full"
+						id="email1"
+						placeholder="   Put your email here"
+						required
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
+						type="email"
+						theme={{ dark: false }}
+					/>
+				</div>
+				<div>
+					<div className="mt-2 ">
+						<Label htmlFor="password1" value="Your password" />
+					</div>
+					<input
+						className="border-2 h-8 rounded-lg w-full"
+						id="password1"
+						required
+						value={password}
+						onChange={(e) => setPassword(e.target.value)}
+						placeholder="  Password"
+						type="password"
+						theme={{ dark: false }}
+					/>
+				</div>
+				<div className="flex items-center gap-2">
+					<Checkbox id="remember" />
+					<Label htmlFor="remember">Remember me</Label>
+				</div>
+				<Button
+					onClick={() => handleLogin()}
+					className="text-white border-red-700 bg-red-700"
+					type="submit"
+				>
+					Submit
+				</Button>
+			</form>
+		</div>
+	);
+}

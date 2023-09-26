@@ -17,7 +17,7 @@ const RestaurantCard = ({ restaurant }) => {
       block
 mx-auto w-full aspect-square bg-no-repeat bg-contain text-center text-2xl rounded-xl  hover:shadow-2xlxl  border-2 shadow-lg"
 		>
-			<div className="flex justify-center items-center flex-col opacity-0 text-transparent hover:text-white  hover:bg-red-600  w-full h-full rounded-xl hover:border-4 border-red-600 hover:opacity-90 hover:shadow-2xl hover:shadow-black transition-all">
+			<div className="flex justify-center items-center flex-col opacity-0 text-transparent hover:text-white  hover:bg-red-700  w-full h-full rounded-xl hover:border-4 border-red-700 hover:opacity-90 hover:shadow-2xl hover:shadow-black transition-all">
 				<h1 className="font-bold text-3xl">{restaurant.name}</h1>
 				<span className="">{restaurant.description}</span>
 				<br />

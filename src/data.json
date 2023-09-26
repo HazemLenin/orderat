@@ -82,7 +82,7 @@
 		{
 			"id": 2,
 			"name": "Mcdonald's",
-			"rate": 1,
+			"rate": 5,
 			"category": "Food",
 			"image": "/MC.png",
 			"products": [

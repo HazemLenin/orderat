@@ -31,7 +31,7 @@ const PopupIcon = () => {
 		<div ref={drop} className="fixed bottom-3 right-3">
 			<button
 				onClick={togglePopup}
-				className=" justify-center items-center text-red-600 shadow-xl  rounded-full w-14 h-14 bg-white"
+				className=" justify-center items-center text-red-700 shadow-xl  rounded-full w-14 h-14 bg-white"
 			>
 				<FontAwesomeIcon icon={faCartShopping} />
 			</button>
@@ -43,7 +43,7 @@ const PopupIcon = () => {
 								<span> {item.name}</span> <span>{item.amount}</span>
 								<button
 									onClick={() => decreaseAmount(item.restaurantId, item.id)}
-									className="text-red-600"
+									className="text-red-700"
 								>
 									<FontAwesomeIcon icon={faMinus} />
 								</button>
@@ -52,7 +52,7 @@ const PopupIcon = () => {
 					</ul>
 					<Link
 						to="/checkout"
-						className="bg-red-600 w-full mt-5 block rounded text-center text-white"
+						className="bg-red-700 w-full mt-5 block rounded text-center text-white"
 					>
 						CheckOut
 					</Link>

@@ -11,7 +11,7 @@ export default function Total(props) {
 	let delivery = 60;
 	let total = cartCost + taxes + delivery;
 	return (
-		<div className="py-5 text-xl text-right text-red-600">
+		<div className="py-5 text-xl text-right text-red-700">
 			Total: {formatcurrency(total)}
 		</div>
 	);

@@ -66,16 +66,19 @@ function App() {
 
 	return (
 		<DndProvider backend={HTML5Backend}>
-			<CartContext.Provider value={[cart, add, remove, decreaseAmount, setCart]}>
+			<CartContext.Provider
+				value={[cart, add, remove, decreaseAmount, setCart]}
+			>
 				<BrowserRouter>
 					<Navbar />
 					<div className="pt-14">
 						<Routes>
-							<Route path="/" element={<LoginForm />} />
+							<Route path="/" element={<RestaurantsPage />} />
 							<Route path="/restaurants/:id" element={<Menu />} />
 							<Route path="/checkout" element={<Checkout />} />
 							<Route path="/about" element={<About />} />
-
+							<Route path="/login" element={<LoginForm />} />
+							<Route path="/signup" element={<SignUpForm />} />
 						</Routes>
 					</div>
 					<PopupIcon />

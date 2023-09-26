@@ -13,13 +13,13 @@ const SearchBar = ({ data, setData }) => {
 	return (
 		<div className="items-center align-middle text-center gap-10 mt-10 ">
 			<input
-				className="border-4 rounded-lg border-red-600 mr-5"
+				className="border-4 rounded-lg border-red-700 mr-5"
 				type="text"
 				placeholder="Search..."
 				value={searchTerm}
 				onChange={handleSearch}
 			/>
-			<button className="text-red-600 text-xl">Search</button>
+			<button className="text-red-700 text-xl">Search</button>
 		</div>
 	);
 };
