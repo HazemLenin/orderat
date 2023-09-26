@@ -14,6 +14,7 @@ import { useDrag } from "react-dnd";
 import CartContext from "../contexts/CartContext";
 import { useContext } from "react";
 import formatcurrency from "./checkout/Formatcurrency";
+import { Tooltip } from "flowbite-react";
 
 function ProductCard({ product }) {
 	const [cart, add, remove, decreaseAmount] = useContext(CartContext);
@@ -96,27 +97,32 @@ function ProductCard({ product }) {
                 transition-all
                 rounded-2xl
                 w-full
-                md:flex
+				flex
+				flex-col
+                md:flex-row
                 justify-between
                 items-center
-				gap-5	"
+				gap-5
+				p-5"
 			key={product.id}
 			ref={drag}
 		>
 			<div
-				className={`hidden md:flex justify-center items-center rounded-md h-20 w-20 text-4xl ml-5 ${backgroundClass}`}
+				className={`flex justify-center items-center rounded-md h-20 w-20 text-4xl ${backgroundClass}`}
 			>
 				{icon}
 			</div>
 
-			<h2>
-				{product.name}
-				<br />
-				<p className="text-red-600"> {formatcurrency(product.price)}</p>
-			</h2>
+			<div>
+				<Tooltip content={product.name}>
+					<p>{product.name}</p>
+				</Tooltip>
+				<p className="text-red-600">{formatcurrency(product.price)}</p>
+			</div>
+
 			<button
 				onClick={() => add(product.id)}
-				className="block mr-3 rounded-full h-10 w-10 text-red-600 hover:bg-red-600 hover:text-white transition-all"
+				className="block rounded-full h-10 w-10 text-red-600 hover:bg-red-600 hover:text-white transition-all"
 			>
 				<FontAwesomeIcon icon={faPlus} />
 			</button>

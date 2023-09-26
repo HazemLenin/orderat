@@ -22,7 +22,8 @@ function App() {
 	const [cart, setCart] = useState([]);
 	//finding the item by id in the cart
 	let add = (productId) => {
-		let product = restaurant.products.find((p) => p.id == productId);
+		let products = data.restaurants.flatMap((r) => r.products);
+		let product = products.find((p) => p.id == productId);
 
 		let oldProduct = cart.find((p) => p.id == product.id);
 		if (oldProduct === undefined) {
@@ -64,7 +65,7 @@ function App() {
 			>
 				<BrowserRouter>
 					<Navbar />
-					<div className="pt-14 bg-gray-800">
+					<div className="pt-14">
 						<Routes>
 							<Route path="/" element={<RestaurantsPage />} />
 							<Route path="/restaurants/:id" element={<Menu />} />
