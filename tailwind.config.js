@@ -4,7 +4,9 @@ export default {
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [
+		'tailwind-scrollbar',
+	],
 	safelist: [
 		"bg-green-400",
 		"text-green-500",

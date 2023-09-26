@@ -12,6 +12,9 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 import data from "./data.json";
 import Footer from "./components/Footer";
+import About from "./pages/About";
+import SignUpForm from "./pages/SignUpFrom";
+import LoginForm from "./pages/Login";
 
 function App() {
 	const [address, setAddress] = useState({
@@ -68,9 +71,11 @@ function App() {
 					<Navbar />
 					<div className="pt-14">
 						<Routes>
-							<Route path="/" element={<RestaurantsPage />} />
+							<Route path="/" element={<LoginForm />} />
 							<Route path="/restaurants/:id" element={<Menu />} />
 							<Route path="/checkout" element={<Checkout />} />
+							<Route path="/about" element={<About />} />
+
 						</Routes>
 					</div>
 					<PopupIcon />

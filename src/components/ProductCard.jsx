@@ -104,6 +104,7 @@ function ProductCard({ product, restaurantId }) {
 				gap-5	"
 			key={product.id}
 			ref={drag}
+			style={{ cursor: 'move' }}
 		>
 			<div
 				className={`hidden md:flex justify-center items-center rounded-md h-20 w-20 text-4xl ml-5 ${backgroundClass}`}

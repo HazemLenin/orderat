@@ -42,7 +42,7 @@ const PopupIcon = () => {
 							<li className="flex justify-between" key={index}>
 								<span> {item.name}</span> <span>{item.amount}</span>
 								<button
-									onClick={() => decreaseAmount(item.id)}
+									onClick={() => decreaseAmount(item.restaurantId, item.id)}
 									className="text-red-600"
 								>
 									<FontAwesomeIcon icon={faMinus} />
