@@ -10,9 +10,7 @@ const Navbar = () => {
 				<div className="flex  items-center justify-between h-14 ">
 					<div className="flex items-center gap-10">
 						<div className="flex-shrink-0 font-['Kaushan_Script']">
-							<Link to="/" className="text-3xl text-white">
-								Quicky
-							</Link>
+							<span className="text-3xl text-white">Quicky</span>
 						</div>
 						{/* <div className="hidden md:block">
 								<div className="flex items-baseline space-x-4">
@@ -24,6 +22,9 @@ const Navbar = () => {
 									</Link>
 								</div>
 							</div> */}
+						<Link to="/" className="text-white">
+							Restaurants
+						</Link>
 					</div>
 					{/* <div className="flex gap-5">
 						<button className="text-white">Sign up</button>

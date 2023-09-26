@@ -6,9 +6,9 @@ import CartContext from "../../contexts/CartContext";
 
 function SucssesModal() {
 	const [cart, add, remove, decreaseAmount, setCart] = useContext(CartContext);
-useEffect(()=>{
-	setCart([]);
-},[])
+	useEffect(() => {
+		setCart([]);
+	}, []);
 	return (
 		<div className="flex justify-center items-center flex-col gap-10 bg-white rounded-xl p-10">
 			<h1 className="font-bold  text-red-600 text-5xl">Quicky is on the way</h1>
