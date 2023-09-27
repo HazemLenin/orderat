@@ -6,11 +6,12 @@ import {
 	faSignOutAlt,
 	faUserPlus,
 	faRightToBracket,
+	faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { initializeApp } from "@firebase/app";
-import { getAuth } from "@firebase/auth";
+import { getAuth, signOut } from "@firebase/auth";
 const Navbar = () => {
 	const [user, setUser] = useState(null);
 	useEffect(() => {
@@ -67,7 +68,19 @@ const Navbar = () => {
 						</div>
 					</div>
 					{user ? (
-						<span className="text-white">{user?.email}</span>
+						<div className="flex gap-10">
+							<span className="text-white">
+								<FontAwesomeIcon icon={faUser} className="mr-3" />
+								{user?.email}
+							</span>
+							<button
+								onClick={(e) => signOut(getAuth())}
+								className="text-white"
+							>
+								<FontAwesomeIcon icon={faSignOutAlt} className="mr-3" />
+								<span className="hidden md:inline">Sign Out</span>
+							</button>
+						</div>
 					) : (
 						<>
 							<div className="flex gap-5">
