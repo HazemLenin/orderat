@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 
-const SignupForm = () => {
+const SignUpForm = () => {
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
 	const [email, setEmail] = useState("");
@@ -89,4 +89,4 @@ const SignupForm = () => {
 	);
 };
 
-export default SignupForm;
+export default SignUpForm;

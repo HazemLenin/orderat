@@ -13,7 +13,7 @@ import { DndProvider } from "react-dnd";
 import data from "./data.json";
 import Footer from "./components/Footer";
 import LoginForm from "./pages/LoginForm";
-import SignupForm from "./pages/SignupForm";
+import SignUpForm from "./pages/SignUpForm";
 import About from "./pages/About";
 
 function App() {
@@ -74,7 +74,7 @@ function App() {
 							<Route path="/restaurants/:id" element={<Menu />} />
 							<Route path="/checkout" element={<Checkout />} />
 							<Route path="/login" element={<LoginForm />} />
-							<Route path="/signup" element={<SignupForm />} />
+							<Route path="/signup" element={<SignUpForm />} />
 							<Route path="/about" element={<About />} />
 						</Routes>
 					</div>
