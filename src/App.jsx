@@ -13,8 +13,8 @@ import { DndProvider } from "react-dnd";
 import data from "./data.json";
 import Footer from "./components/Footer";
 import LoginForm from "./pages/LoginForm";
-import SignUpForm from "./pages/SignUpForm";
 import About from "./pages/About";
+import SignupForm from "./pages/SignupForm";
 
 function App() {
 	const [address, setAddress] = useState({
