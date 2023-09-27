@@ -12,9 +12,9 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 import data from "./data.json";
 import Footer from "./components/Footer";
-import LoginForm from "./Pages/LoginForm";
-import RegisterForm from "./Pages/RegisterForm";
-import About from "./Pages/About";
+import LoginForm from "./pages/LoginForm";
+import RegisterForm from "./pages/RegisterForm";
+import About from "./pages/About";
 import ProtectedRoute from './pages/ProtectedRoute';
 
 
