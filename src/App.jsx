@@ -12,6 +12,9 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 import data from "./data.json";
 import Footer from "./components/Footer";
+import LoginForm from "./Pages/LoginForm";
+import SignUpForm from "./Pages/SIgnupForm";
+import About from "./Pages/About";
 
 function App() {
 	const [address, setAddress] = useState({
@@ -70,6 +73,9 @@ function App() {
 							<Route path="/" element={<RestaurantsPage />} />
 							<Route path="/restaurants/:id" element={<Menu />} />
 							<Route path="/checkout" element={<Checkout />} />
+							<Route path="/login" element={<LoginForm />} />
+							<Route path="/signup" element={<SignUpForm />} />
+							<Route path="/about" element={<About />} />
 						</Routes>
 					</div>
 					<PopupIcon />

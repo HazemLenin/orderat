@@ -13,7 +13,7 @@ function Cartdata(props) {
 	const [cart, add, remove, decreaseAmount] = useContext(CartContext);
 
 	return (
-		<div className="rounded-lg shadow-2xl p-8 w-full bg-red-600">
+		<div className="rounded-lg shadow-2xl p-8 w-full bg-red-700">
 			<div className="flex justify-between items-center mb-3">
 				<div className="text-white w-full text-center">Product</div>
 				<div className="text-white w-full text-center">Price</div>

@@ -14,12 +14,12 @@ function Menu() {
 					style={{ backgroundImage: `url('${restaurant.image}')` }}
 					className="bg-cover bg-center w-full absolute inset-0"
 				></div>
-				<div className="absolute inset-0 bg-red-600/80 flex items-end text-white pb-14 pl-10">
+				<div className="absolute inset-0 bg-red-700/80 flex items-end text-white pb-14 pl-10">
 					<h1 className="text-5xl">{restaurant.name}</h1>
 				</div>
 			</div>
 			<div className="px-10">
-				<h1 className="text-6xl my-10 text-red-600">Menu</h1>
+				<h1 className="text-6xl my-10 text-red-700">Menu</h1>
 				<div className="grid grid-cols-2 md:grid-cols-3 gap-10">
 					{restaurant.products.map((product) => (
 						<ProductCard product={product} key={product.id} />

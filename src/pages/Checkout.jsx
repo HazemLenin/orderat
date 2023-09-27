@@ -22,7 +22,7 @@ function Checkout() {
 	return (
 		<div className="flex flex-col-reverse md:flex-row w-full gap-20 px-5 pt-5">
 			<div className="md:w-2/3">
-				<h1 className="text-4xl text-red-600">Checkout</h1>
+				<h1 className="text-4xl text-red-700">Checkout</h1>
 				<Map />
 				<Delivery />
 				<Taxes products={cart} />
@@ -32,14 +32,14 @@ function Checkout() {
 				<div className="flex justify-around w-full">
 					<button
 						onClick={() => setIsSuccessOpened(true)}
-						className="flex justify-center items-center gap-2 rounded-md bg-red-600 text-white w-32 h-12 text-xl"
+						className="flex justify-center items-center gap-2 rounded-md bg-red-700 text-white w-32 h-12 text-xl"
 					>
 						<FontAwesomeIcon icon={faDollar} />
 						Cash
 					</button>
 					<button
 						onClick={() => setIsCreditOpened(true)}
-						className="flex justify-center items-center gap-2 rounded-md bg-red-600 text-white w-32 h-12 text-xl"
+						className="flex justify-center items-center gap-2 rounded-md bg-red-700 text-white w-32 h-12 text-xl"
 					>
 						<FontAwesomeIcon icon={faCreditCard} />
 						Credit

@@ -44,7 +44,7 @@ function ProductCard({ product }) {
 			backgroundClass = "bg-purple-400 text-purple-600";
 			break;
 		case "RED":
-			backgroundClass = "bg-red-400 text-red-600";
+			backgroundClass = "bg-red-400 text-red-700";
 			break;
 		case "YELLOW":
 			backgroundClass = "bg-yellow-400 text-yellow-600";
@@ -117,12 +117,12 @@ function ProductCard({ product }) {
 				<Tooltip content={product.name}>
 					<p>{product.name}</p>
 				</Tooltip>
-				<p className="text-red-600">{formatcurrency(product.price)}</p>
+				<p className="text-red-700">{formatcurrency(product.price)}</p>
 			</div>
 
 			<button
 				onClick={() => add(product.id)}
-				className="block rounded-full h-10 w-10 text-red-600 hover:bg-red-600 hover:text-white transition-all"
+				className="block rounded-full h-10 w-10 text-red-700 hover:bg-red-700 hover:text-white transition-all"
 			>
 				<FontAwesomeIcon icon={faPlus} />
 			</button>
