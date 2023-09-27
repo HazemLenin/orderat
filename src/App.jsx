@@ -74,7 +74,7 @@ function App() {
 							<Route path="/restaurants/:id" element={<Menu />} />
 							<Route path="/checkout" element={<Checkout />} />
 							<Route path="/login" element={<LoginForm />} />
-							<Route path="/signup" element={<SignUpForm />} />
+							<Route path="/signup" element={<SignupForm />} />
 							<Route path="/about" element={<About />} />
 						</Routes>
 					</div>
