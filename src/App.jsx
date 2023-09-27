@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 import LoginForm from "./pages/LoginForm";
 import About from "./pages/About";
 import RegisterForm from "./pages/RegisterForm";
-
+// hello wrold
 function App() {
 	const [address, setAddress] = useState({
 		lat: 31.25214048726485,
