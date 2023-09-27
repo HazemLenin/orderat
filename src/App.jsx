@@ -17,6 +17,7 @@ import RegisterForm from "./pages/RegisterForm";
 import About from "./pages/About";
 import ProtectedRoute from './pages/ProtectedRoute';
 
+import About from "./pages/About";
 
 function App() {
 
