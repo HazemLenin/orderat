@@ -30,7 +30,6 @@ const SignupForm = () => {
 						value={username}
 						onChange={(e) => setUsername(e.target.value)}
 						type="name"
-						theme={{ dark: false }}
 					/>
 					<div className="mt-2 block">
 						<Label htmlFor="email1" value="Your email" />
@@ -44,7 +43,6 @@ const SignupForm = () => {
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 						type="email"
-						theme={{ dark: false }}
 					/>
 				</div>
 				<div>
@@ -59,7 +57,6 @@ const SignupForm = () => {
 						onChange={(e) => setPassword(e.target.value)}
 						placeholder="  Password"
 						type="password"
-						theme={{ dark: false }}
 					/>
 				</div>
 				<Label htmlFor="phone" value="Phone Number" />
@@ -71,7 +68,6 @@ const SignupForm = () => {
 					value={phone}
 					onChange={(e) => setPhone(e.target.value)}
 					type="number"
-					theme={{ dark: false }}
 				/>
 				<div className="flex items-center gap-2">
 					<Checkbox id="remember" />
