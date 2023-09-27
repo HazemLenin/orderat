@@ -13,9 +13,9 @@ import { DndProvider } from "react-dnd";
 import data from "./data.json";
 import Footer from "./components/Footer";
 import LoginForm from "./Pages/LoginForm";
-import SignUpForm from "./Pages/SIgnupForm";
+import RegisterForm from "./Pages/RegisterForm";
 import About from "./Pages/About";
-import ProtectedRoute from './ProtectedRoute';
+import ProtectedRoute from './pages/ProtectedRoute';
 
 
 function App() {
@@ -80,7 +80,7 @@ function App() {
 							<Route path="/restaurants/:id" element={<Menu />} />
 							<Route path="/checkout" element={<Checkout />} />
 							<Route path="/login" element={<LoginForm />} />
-							<Route path="/signup" element={<SignUpForm />} />
+							<Route path="/signup" element={<RegisterForm />} />
 							<Route path="/about" element={<About />} />
 						</Routes>
 					</div>

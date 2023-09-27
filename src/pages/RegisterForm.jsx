@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Button, Checkbox, Label, TextInput } from "flowbite-react";
+import { useNavigate } from "react-router-dom";
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 
-const SignUpForm = () => {
+const RegisterForm = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     const firebaseConfig = {
       apiKey: "AIzaSyDacCMh0IFhFZmDs8uTseuLwMcXs7RZDV8",
@@ -34,6 +36,8 @@ const SignUpForm = () => {
    try{
     const res = await createUserWithEmailAndPassword(auth, email, password)
 console.log("Done");
+
+navigate("/")
   } catch{
     console.log("error")
   } 
@@ -111,4 +115,4 @@ console.log("Done");
   );
 };
 
-export default SignUpForm;
+export default RegisterForm;

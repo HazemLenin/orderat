@@ -2,10 +2,12 @@ import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 import React, { useState, useEffect } from "react";
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
   useEffect(() => {
     const firebaseConfig = {
       apiKey: "AIzaSyDacCMh0IFhFZmDs8uTseuLwMcXs7RZDV8",
@@ -27,6 +29,7 @@ export default function LoginForm() {
     try {
       const res = await signInWithEmailAndPassword(auth, email, password)
       console.log("Done");
+      navigate("/")
     } catch (error) {
       alert(error.message);
     }

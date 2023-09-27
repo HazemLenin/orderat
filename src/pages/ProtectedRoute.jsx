@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import React from 'react'
-import { Route, Redirect } from 'react-router-dom';
-import { FirebaseApp, initializeApp } from "firebase/app";
+import { Route, Navigate } from 'react-router-dom';
+import { initializeApp } from "firebase/app";
 import { Checkbox } from "flowbite-react";
 import Checkout from './Checkout'
  
@@ -19,12 +19,12 @@ import Checkout from './Checkout'
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
    
-  }, []); const user = FirebaseApp.auth().currentUser;
+  }, []); const user = app.auth().currentUser;
    return (
     <Route
          {...rest}
          render={() =>
-           user ? <Checkout/> : <Redirect to="/login" />
+           user ? <Checkout/> : <Navigate to="/login" />
          }
        />
   )
