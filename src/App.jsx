@@ -15,15 +15,9 @@ import Footer from "./components/Footer";
 import LoginForm from "./pages/LoginForm";
 import RegisterForm from "./pages/RegisterForm";
 import About from "./pages/About";
-import ProtectedRoute from './pages/ProtectedRoute';
-
-import About from "./pages/About";
+import ProtectedRoute from "./pages/ProtectedRoute";
 
 function App() {
-
-
-
-
 	const [address, setAddress] = useState({
 		lat: 31.25214048726485,
 		lng: 30.009838471967534,
