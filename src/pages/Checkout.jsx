@@ -13,11 +13,34 @@ import Map from "../components/checkout/Map";
 import VisaModal from "../components/modals/VisaModal";
 import SucssesModal from "../components/modals/SucssesModal";
 
+import { initializeApp } from "firebase/app";
+import { useNavigate } from "react-router";
+import { getAuth } from "@firebase/auth";
+
 function Checkout() {
 	const [cart, add, remove, decreaseAmount, setCart] = useContext(CartContext);
 
 	const [isSuccessOpened, setIsSuccessOpened] = useState(false);
 	const [isCreditOpened, setIsCreditOpened] = useState(false);
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		const firebaseConfig = {
+			apiKey: "AIzaSyDacCMh0IFhFZmDs8uTseuLwMcXs7RZDV8",
+			authDomain: "urpr-e74ab.firebaseapp.com",
+			projectId: "urpr-e74ab",
+			storageBucket: "urpr-e74ab.appspot.com",
+			messagingSenderId: "683963509393",
+			appId: "1:683963509393:web:df5fc02c58dc08f99ead30",
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const user = getAuth().currentUser;
+		if (!user) {
+			navigate("/login");
+		}
+	}, []);
 
 	return (
 		<div className="flex flex-col-reverse md:flex-row w-full gap-20 px-5 pt-5">
