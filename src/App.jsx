@@ -12,9 +12,9 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 import data from "./data.json";
 import Footer from "./components/Footer";
-import LoginForm from "./Pages/LoginForm";
-import SignUpForm from "./Pages/SIgnupForm";
-import About from "./Pages/About";
+import LoginForm from "./pages/LoginForm";
+import SignUpForm from "./pages/SIgnupForm";
+import About from "./pages/About";
 
 function App() {
 	const [address, setAddress] = useState({
