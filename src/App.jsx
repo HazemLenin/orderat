@@ -13,9 +13,10 @@ import { DndProvider } from "react-dnd";
 import data from "./data.json";
 import Footer from "./components/Footer";
 import LoginForm from "./pages/LoginForm";
-import About from "./pages/About";
 import RegisterForm from "./pages/RegisterForm";
-// hello wrold
+import About from "./pages/About";
+import ProtectedRoute from "./pages/ProtectedRoute";
+
 function App() {
 	const [address, setAddress] = useState({
 		lat: 31.25214048726485,
