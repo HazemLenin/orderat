@@ -13,7 +13,7 @@ import { DndProvider } from "react-dnd";
 import data from "./data.json";
 import Footer from "./components/Footer";
 import LoginForm from "./pages/LoginForm";
-import SignUpForm from "./pages/SignupForm";
+import SignUpForm from "./pages/SignUpForm";
 import About from "./pages/About";
 
 function App() {
