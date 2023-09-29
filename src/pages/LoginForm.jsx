@@ -7,24 +7,13 @@ import {
 	updateProfile,
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import firebase from '../firebase'
 
 export default function LoginForm() {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const navigate = useNavigate();
-	useEffect(() => {
-		const firebaseConfig = {
-			apiKey: "AIzaSyDacCMh0IFhFZmDs8uTseuLwMcXs7RZDV8",
-			authDomain: "urpr-e74ab.firebaseapp.com",
-			projectId: "urpr-e74ab",
-			storageBucket: "urpr-e74ab.appspot.com",
-			messagingSenderId: "683963509393",
-			appId: "1:683963509393:web:df5fc02c58dc08f99ead30",
-		};
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-	}, []);
+	
 
 	const handleLogin = async (e) => {
 		e.preventDefault();

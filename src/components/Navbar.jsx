@@ -15,17 +15,6 @@ import { getAuth, signOut } from "@firebase/auth";
 const Navbar = () => {
 	const [user, setUser] = useState(null);
 	useEffect(() => {
-		const firebaseConfig = {
-			apiKey: "AIzaSyDacCMh0IFhFZmDs8uTseuLwMcXs7RZDV8",
-			authDomain: "urpr-e74ab.firebaseapp.com",
-			projectId: "urpr-e74ab",
-			storageBucket: "urpr-e74ab.appspot.com",
-			messagingSenderId: "683963509393",
-			appId: "1:683963509393:web:df5fc02c58dc08f99ead30",
-		};
-
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
 
 		const unsubscribe = getAuth().onAuthStateChanged((user) => {
 			setUser(user);
@@ -42,7 +31,7 @@ const Navbar = () => {
 				<div className="flex  items-center justify-between h-14 ">
 					<div className="flex items-center gap-10">
 						<div className="text-3xl text-white flex-shrink-0 font-['Kaushan_Script']">
-							Quicky
+							<Link to="/">Quicky</Link>
 						</div>
 						<div className="flex">
 							<div className="hidden md:block">
