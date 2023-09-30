@@ -89,7 +89,7 @@ function Restaurant() {
 				onChange={(e) => setSearch(e.target.value)}
 				placeholder="Search"
 			/>
-			<div className="flex flex-col md:grid grid-cols-3 gap-10 mt-20 px-5">
+			<div className="flex flex-col md:grid grid-cols-5 gap-10 mt-20 px-5">
 				{data.restaurants
 					.filter((restaurant) => restaurant.category == selected)
 					.filter(

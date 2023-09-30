@@ -13,11 +13,11 @@ const RestaurantCard = ({ restaurant }) => {
 			to={`/restaurants/${restaurant.id}`}
 			key={restaurant.id}
 			style={{ backgroundImage: `url('${restaurant.image}')` }}
-			className="
+			className=" hover:animate-bounce
       block
 mx-auto w-full aspect-square bg-no-repeat bg-contain text-center text-2xl rounded-xl hover:shadow-xl hover:-translate-y-3 transition-all"
 		>
-			<div className="flex justify-center items-center flex-col opacity-0 text-transparent hover:text-white  hover:bg-red-700  w-full h-full rounded-xl hover:border-4 border-red-700 hover:opacity-90 hover:shadow-2xl hover:shadow-red-700 transition-all">
+			<div className=" flex justify-center items-center flex-col opacity-0 text-transparent hover:text-white  hover:bg-red-700  w-full h-full rounded-xl hover:border-4 border-red-700 hover:opacity-90 hover:shadow-2xl hover:shadow-red-700 transition-all">
 				<h1 className="font-bold text-3xl">{restaurant.name}</h1>
 				<p className="">{restaurant.description}</p>
 				<div>{stars}</div>
